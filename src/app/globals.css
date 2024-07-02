@@ -9,4 +9,21 @@
     font-weight: 400; /* Adjust weight as needed */
     font-style: normal;
   }
-
+  .top-47 {
+    top: 42%;
+  }
+   .text-20xl {
+      font-size: 22rem;
+    } 
+    .ml-96 {
+      margin-left: 19rem;
+    }
+    .-mt-80 {
+      margin-top: -23rem;
+    }
+    .-mt-96 {
+      margin-top: -27rem;
+    }
+    .-mt-80 {
+      margin-top: -26rem;
+    }

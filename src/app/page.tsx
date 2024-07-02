@@ -24,13 +24,13 @@ const Homepage = () => {
       <span className="text-white text-opacity-60 font-thin ml-28 text-7xl">NITH</span>
 
 
-
+<div className='flex flex-col items-center justify-center absolute top-47 left-1/4"'>
       <h1 className="  text-20xl font-bold raleway-regular  ml-96 -mt-60">ISTE</h1>
 
 
       <h1 className=" text-white text-opacity-50 font-bold raleway-regular  text-20xl  ml-96 -mt-80 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
       <h1 className=" text-white text-opacity-20 font-bold raleway-regular  text-20xl  ml-96 -mt-96 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>   
-      
+      </div>
       
          <nav className="absolute top-44  right-0 pr-20 text-white">
         <ul className="space-y-5">
@@ -41,8 +41,9 @@ const Homepage = () => {
                   {item.name}
                 </div>
               </Link>
-              <span className="flex w-24 h-px bg-white"></span>
-              <span className="flex w-3 h-3 bg-white rounded-full"></span>
+            
+              <span className="flex w-24 h-px right-0 flex-col bg-white"></span>
+              <span className="flex w-3 h-3 right-0 bg-white rounded-full"></span>
             </li>
           ))}
         </ul>
