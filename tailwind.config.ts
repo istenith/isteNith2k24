@@ -12,6 +12,10 @@ const config: Config = {
     },
     
     extend: {
+      colors: {
+        charcoal: '#161616',
+      },
+
       letterSpacing: {
         'expanded': '0em', 
       },

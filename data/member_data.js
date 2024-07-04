@@ -32,7 +32,7 @@ export const profileDetails = [
       },
       {
         name: "Charu",
-        section: "Finalyear",
+        section: "finalyear",
         post: "Treasurer",
         linkedin: "https://www.linkedin.com/in/charu-229665223",
         instagram: "https://www.instagram.com/charuchauhan575/",
@@ -44,7 +44,7 @@ export const profileDetails = [
       },
       {
         name: "Dharuva Thakur",
-        section: "Finalyear",
+        section: "finalyear",
         post: "Finance Head",
         linkedin: "https://www.linkedin.com/in/dharuva-thakur-83576122a",
         instagram: "https://www.instagram.com/dharuva_thakur/",
@@ -60,7 +60,7 @@ export const profileDetails = [
         post: "Media and Marketing head",
         linkedin: "https://www.linkedin.com/in/ekansh-verma-469557228",
         instagram: "https://www.instagram.com/i_ekanshverma/",
-        img: "/assets/images/finalyear/ekansh.jpeg",
+        img: "/assets/images/finalyear/ekansh.webp",
         rollNumber: "1upS_dc_SLM0CsaA__dVnXqApgS4eFKD1",
         branch: "Electrical Engineering",
         location: "Kullu, Himachal Pradesh",
@@ -92,18 +92,7 @@ export const profileDetails = [
         about:
           "Pursuing BTech in Mathematics and Scientific Computing (2025), Interested in Tech. And Financial Stuff. Travel Freak",
       },
-      {
-        name: "Jeevak Sangodkar",
-        section: "finalyear",
-        post: "PR Head",
-        linkedin: "https://www.linkedin.com/in/jeevak-sangodkar-919653228/",
-        instagram: "https://www.instagram.com/jeevaks17/",
-        img: "/assets/images/finalyear/jeevak.webp",
-        rollNumber: "16_rAwwruLc2BS3XuKMGjF2K70foAL39d",
-        branch: "Computer science and Engineering",
-        location: "Nagpur, Maharashtra",
-        about: "Batch 2025",
-      },
+
       {
         name: "Kanika Sharma",
         section: "finalyear",
@@ -116,18 +105,7 @@ export const profileDetails = [
         location: "Kangra, Himachal Pradesh",
         about: "First year undergrad at NITH; technology enthusiast",
       },
-      {
-        name: "Kuldeep Kumar",
-        section: "finalyear",
-        post: "Logistic Head",
-        linkedin: "https://www.linkedin.com/in/kuldeep-kumar-205a9b229/",
-        instagram: "https://www.instagram.com/_.kuldeep_kumar._/",
-        img: '/assets/images/finalyear/kuldeep.webp',
-        rollNumber: "156x7nF6Vjqlqz0aV1u_krIV2F0B-lvpm",
-        branch: "Computer Science and Engineering",
-        location: "Solan, Himachal Pradesh",
-        about: "Batch 2025",
-      },
+
     
       {
         name: "Madhukesh Singh",
@@ -228,9 +206,31 @@ export const profileDetails = [
         about:
           "Electrical Sophomore at NIT Hamirpur currently learning new Web Technologies at Top pace.",
       },
-    
+      {
+        name: "Jeevak Sangodkar",
+        section: "finalyear",
+        post: "PR Head",
+        linkedin: "https://www.linkedin.com/in/jeevak-sangodkar-919653228/",
+        instagram: "https://www.instagram.com/jeevaks17/",
+        img: "/assets/images/finalyear/jeevak.webp",
+        rollNumber: "16_rAwwruLc2BS3XuKMGjF2K70foAL39d",
+        branch: "Computer science and Engineering",
+        location: "Nagpur, Maharashtra",
+        about: "Batch 2025",
+      },
 
-
+      {
+        name: "Kuldeep Kumar",
+        section: "finalyear",
+        post: "Logistic Head",
+        linkedin: "https://www.linkedin.com/in/kuldeep-kumar-205a9b229/",
+        instagram: "https://www.instagram.com/_.kuldeep_kumar._/",
+        img: '/assets/images/finalyear/kuldeep.webp',
+        rollNumber: "156x7nF6Vjqlqz0aV1u_krIV2F0B-lvpm",
+        branch: "Computer Science and Engineering",
+        location: "Solan, Himachal Pradesh",
+        about: "Batch 2025",
+      },
 
 
 
