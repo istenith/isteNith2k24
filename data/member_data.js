@@ -353,7 +353,7 @@ export const profileDetails = [
   },
   {
     section: "Thirdyear",
-    name: "Sourabh Awasthi",
+    name: "Sourabh Awasthy",
     branch: "Electronics and Communication Engineering",
     location: "Kangra, Himchal Pradesh",
     instagram: "https://www.instagram.com/__sourabh.awasthy/",
