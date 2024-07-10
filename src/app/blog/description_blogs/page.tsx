@@ -31,9 +31,9 @@ export default function blog_description() {
                 />
                             <div className="flex flex-row mt-8">
 
-                                <div className="bg-black text-3xl p-4 rounded-md">{blog.tags[0]}</div>
-                                <div className="bg-black text-3xl p-4 ml-4 rounded-md">{blog.tags[1]}</div>
-                                <div className="bg-black text-3xl p-4 ml-4 rounded-md">{blog.tags[2]}</div>
+                                <div className="bg-stone-600 text-3xl p-4 rounded-md">{blog.tags[0]}</div>
+                                <div className=" bg-stone-600 text-3xl p-4 ml-4 rounded-md">{blog.tags[1]}</div>
+                                <div className="bg-stone-600 text-3xl p-4 ml-4 rounded-md">{blog.tags[2]}</div>
                             </div>
                         </div>
                         
