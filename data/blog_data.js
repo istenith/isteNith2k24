@@ -1,4 +1,4 @@
-import vim_plugins from "@/app/hello/page.mdx"
+// import vim_plugins from "@/app/hello/page.mdx"
  export const blogdata = [
   {
     id: 1,
@@ -8,7 +8,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ["linux", "vim", "neovim"],
     description:
       "Vim is a great text editor, in fact some would argue it is the best text editor! But the problem is that it is just a text editor. Nothing more, nothing less...",
-    mdfile: vim_plugins, 
+    // mdfile: vim_plugins, 
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['hardware', 'IoT', 'AI','embedded systems'],
     description:
       "More data has been created in the past two years than the entire history of the human race... ",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['julia', 'packages'],
     description:
       "This article is a step by step detail of how one can write his/her own package manager in Julia...",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['julia', 'GPU'],
     description:
       "Nowadays GPUs are not just confined to gaming requirements. A GPUs ability to distribute the computational load over hundreds of cores makes then effective enough for a variety of applications like Machine Learning, scientific computing etc...",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ["linux", "noobfriendly"],
     description:
       "This blog will give you an idea about different distros that are available and which one you should choose as a beginner. Lets begin with looking at some of the big names that are available...",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['linux', 'userfriendly', 'shell', 'bash'],
     description:
       "A Shell provides you with an interface to the Unix system. It gathers input from you and executes programs based on that input. When a program finishes executing, it displays that program's output...",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['serverless', 'development'],
     description:
       "Developers spend countless hours solving business problems with code. Then it’s the ops team’s turn to spend countless hours, first figuring out how to get the code that developers write up and running on whatever computers are available, and second making sure those computers operate smoothly...",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['compilers', 'development'],
     description:
       "In computer programming, as in real life, names are useful handles for concrete entities. The key point about SSA is that having unique names for distinct entities reduces uncertainty and imprecision... ",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
   {
     id: 9,
@@ -88,6 +88,6 @@ import vim_plugins from "@/app/hello/page.mdx"
     tags: ['terminal', 'linux','noobfriendly'],
     description:
       "The Linux command line is a text-based computer interface, and It is also known as the shell, terminal, console, prompt, and a variety of other names, and it can be intimidating at first for beginners...",
-      mdfile: vim_plugins, 
+    //   mdfile: vim_plugins, 
   },
 ];
