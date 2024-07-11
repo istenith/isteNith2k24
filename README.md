@@ -5,7 +5,7 @@
     ```shell
     npm install
     ```
-    
+
 1. First, run the development server:
 
     ```bash
@@ -18,9 +18,12 @@
     bun dev
     ```
 
-2. Then Start the GraphQL server (Apollo-Server) with
+#### Used [`concurrently`](https://www.npmjs.com/package/concurrently) to run local development server and GraphQL server.
 
-    ```shell
-    node apollo-server.mjs
-    ```
+To test the GraphQL server (Apollo-Server) independently.
+
+```bash
+nodemon apollo-server.mjs
+```
+
 
