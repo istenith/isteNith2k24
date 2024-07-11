@@ -1,10 +1,11 @@
-import { ApolloServer, gql } from 'apollo-server';
+import { ApolloServer, gql } from 'apollo-server-express';
+import express from 'express';
+import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 
 const typeDefs = gql`
   type Member {
@@ -54,15 +55,23 @@ const resolvers = {
   },
 };
 
+const app = express();
+
+app.use(cors());
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  cors: {
-    origin: ['http://localhost:3000', 'https://iste2k24testing.netlify.app'],
-    credentials: true,
-  },
+  playground: true,
+  introspection: true,
 });
 
-server.listen().then(({ url }) => {
-  console.log(`🚀 Apollo Server starting at ${url}`);
+await server.start();
+
+server.applyMiddleware({ app, path: '/graphql' });
+
+const PORT = 4000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`);
 });

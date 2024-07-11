@@ -6,9 +6,9 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import Link from 'next/link';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'http://localhost:4000/graphql/',
   cache: new InMemoryCache(),
-  credentials: 'include'
+  // credentials: 'include'
 });
 
 const GET_MEMBERS = gql`
