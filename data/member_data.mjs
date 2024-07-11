@@ -586,4 +586,4 @@ export const profileDetails = [
   img: "assets/images/secondyear/Vedant.webp",
 },
 
-];
+  ];

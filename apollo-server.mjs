@@ -46,7 +46,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     members: async () => {
-      const { profileDetails } = await import(path.resolve(__dirname, './data/member_data.js'));
+      const { profileDetails } = await import(path.resolve(__dirname, './data/member_data.mjs'));
       return profileDetails;
     },
     blogPosts: () => blogPosts, // to be implemented yet
@@ -57,5 +57,5 @@ const resolvers = {
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
-  console.log(`Server starting at ${url}`);
+  console.log(`🚀 Apollo Server starting at ${url}`);
 });
