@@ -1,10 +1,8 @@
-
-
 export const profileDetails = [
     
     // Finalyear..............
     
-    {
+    { 
         name: "Aditya Rana",
         section: "finalyear",
         post: "Design Head",
@@ -86,7 +84,7 @@ export const profileDetails = [
         linkedin: "https://www.linkedin.com/in/hardik-sachdeva-a69987217",
         instagram: "https://www.instagram.com/_haardyy_/",
         img: "/assets/images/finalyear/hardik.webp",
-        rollNumber: "",
+        rollNumber: "test",
         branch: "Mathematics and Scientific Computing",
         location: "Nainital, Uttarakhand",
         about:
@@ -353,7 +351,7 @@ export const profileDetails = [
   },
   {
     section: "Thirdyear",
-    name: "Sourabh Awasthi",
+    name: "Sourabh Awasthy",
     branch: "Electronics and Communication Engineering",
     location: "Kangra, Himchal Pradesh",
     instagram: "https://www.instagram.com/__sourabh.awasthy/",

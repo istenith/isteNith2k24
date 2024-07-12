@@ -1,14 +1,45 @@
 "use client";
 import React, { useState } from 'react';
+import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
 import { FaInstagram } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import Link from 'next/link';
-import { profileDetails } from "../../../data/member_data";
+
+const client = new ApolloClient({
+  uri: 'http://localhost:4000/graphql/',
+  cache: new InMemoryCache(),
+  // credentials: 'include'
+});
+
+const GET_MEMBERS = gql`
+  {
+    members {
+      name
+      section
+      post
+      linkedin
+      instagram
+      img
+      rollNumber
+      branch
+      location
+      about
+    }
+  }
+`;
 
 const Team = () => {
   const [initialYear, setYear] = useState("finalyear");
 
-  const filteredProfiles = profileDetails.filter(profile => profile.section === initialYear);
+  const { loading, error, data } = useQuery(GET_MEMBERS, {
+    client,
+    fetchPolicy: 'cache-first',
+  });
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  const filteredProfiles = data.members.filter(profile => profile.section === initialYear);
 
   return (
     <div className="min-h-screen bg-[#1E1E1E] text-white">
@@ -70,4 +101,10 @@ const Team = () => {
   );
 };
 
-export default Team;
+const TeamWithApollo = () => (
+  <ApolloProvider client={client}>
+    <Team />
+  </ApolloProvider>
+);
+
+export default TeamWithApollo;
