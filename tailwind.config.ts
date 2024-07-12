@@ -13,14 +13,7 @@ const config: Config = {
     
     extend: {
       colors: {
-        'custom-gray': '#1E1E1E',
-        'custom-color': '#AE9B9B',
-
-        
-      },
-      
-      spacing: {
-        '128': '32rem', 
+        charcoal: '#161616',
       },
 
       letterSpacing: {
@@ -31,7 +24,6 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
- 
     },
   },
   plugins: [],
