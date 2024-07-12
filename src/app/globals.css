@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .raleway-regular {
     font-family: "Raleway", sans-serif;
@@ -67,6 +68,15 @@
   }
 .mb-contactbottom {
   margin-bottom: 1rem;
+
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
 }
 
 /*iste and nith media q*/
