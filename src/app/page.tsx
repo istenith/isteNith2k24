@@ -32,7 +32,7 @@ return (
   <div className="h-screen bg-[#1e1e1e] text-white">
   
 
-  <img src="iste_logo-01-removebg-preview.webp" className=" relative w-20 h-auto z-50 " alt="ISTE Logo" />
+  <img src="assets\images\util\iste_logo-01-removebg-preview.webp" className=" relative w-20 h-auto z-50 " alt="ISTE Logo" />
   <span className="text-white text-opacity-60 font-thin ml-nith text-7xl">NITH</span>
 
   <div className="flex flex-col items-center justify-center absolute top-iste left-1/4">
@@ -66,7 +66,7 @@ return (
       {pagenames.map((item) => (
         <li key={item.name} className="relative group text-4xl flex items-center ">
           <Link href={item.href}>
-            <div className="text-white opacity-70 transition-opacity duration-300 hover:opacity-100 transition-transform duration-300 group-hover:-translate-y-1.5 mr-4 cursor-pointer">
+            <div className="text-white opacity-70  hover:opacity-100 transition-transform duration-300 group-hover:-translate-y-1.5 mr-4 cursor-pointer">
               {item.name}
             </div>
           </Link>
@@ -85,7 +85,7 @@ return (
 <div className="mt-isteimg relative text-white">
   <div className="relative">
     <img
-      src="/Copy of DCS_0632 (1).webp"
+      src="assets\images\util\Copy of DCS_0632 (1).webp"
       className="w-isteimg h-isteimg mt-isteimg flex opacity-50 mx-auto"
     />
     <div className="absolute inset-0 flex items-center justify-center">

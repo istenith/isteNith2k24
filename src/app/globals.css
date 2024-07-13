@@ -2,13 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .raleway-regular {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* Adjust weight as needed */
     font-style: normal;
   }
+  
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+}
   .hover-translate-z-10:hover {
     transform: translateZ(10px);
   }
@@ -63,6 +73,8 @@
 .mb-contactbottom {
   margin-bottom: 1rem;
 }
+
+
 /*iste and nith media q*/
 @media (max-width:768px) {
   .ml-nith {
