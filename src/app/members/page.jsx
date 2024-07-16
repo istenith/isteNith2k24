@@ -44,20 +44,20 @@ const Team = () => {
   return (
     <div className="min-h-screen bg-[#1E1E1E] text-white">
 
-<div className=' bg-[#1E1E1E] w-full fixed top-0 z-50 '>
-        <div className="mx-10 pt-12 text-4xl md:text-6xl font-r2">ISTE NITH</div>
-        <div className="border-t-2 border-white my-4 mx-10"></div>
+<div className=' bg-[#1E1E1E] lg:w-full lg:fixed top-0 z-50 '>
+        <div className="lg:mx-10 lg:pt-12 pt-2 ml-24 text-4xl md:text-6xl lg:px-4 font-r2">ISTE NITH</div>
+        <div className="border-t-2 w-3/4 lg:w-11/12 ml-10 border-white lg:my-4 lg:mb-0 -mb-40 lg:ml-10"></div>
       </div>
 
-      <div className='flex mt-16 pt-24 sm:flex-col lg:flex-row'>
-        <div className="grid w-full lg:w-3/4 ml-10 md:grid-cols-2 lg:grid-cols-4  ">
+      <div className='flex flex-col-reverse md:flex-row mt-16 pt-24 sm:flex-col lg:flex-row'>
+        <div className="grid w-full lg:w-3/4 ml-16 lg:ml-10 md:grid-cols-2 lg:grid-cols-4  ">
           {filteredProfiles.map((details, index) => (
             <div className="w-full " key={index}>
               <div className="flex flex-col relative">
                 <img
                   src={details.img}
                   alt=""
-                  className="h-64 w-64 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                  className="h-64 w-64 lg:ml-0 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                 />
                 <div className="bg-[#1E1E1E] absolute bottom-2  lg:right-4 flex  text-white opacity-80 hover:opacity-100 transition-opacity duration-300">
                   <Link href={details.instagram} className="flex items-center justify-center ml-2 h-8 w-8">
@@ -68,7 +68,7 @@ const Team = () => {
                   </Link>
                 </div>
               </div>
-              <div className='flex flex-col sm:flex-row'>
+              <div className='flex flex-col'>
                 <div className="mt-2 w-4/5">
                   <h1 className="font-f2 ">{details.name}</h1>
                   <p className="font-f2 text-white font-bold">{details.post}</p>
@@ -79,24 +79,27 @@ const Team = () => {
             </div>
           ))}
         </div>
-        <div className='flex flex-col fixed right-16 '>
-          <div className='text-5xl lg:text-7xl font-r2'>
-            {initialYear.toUpperCase().substring(0, 5)}<br />
-            {initialYear.toUpperCase().substring(5, 11)}
+        <div className='flex lg:flex-col flex-col lg:fixed lg:right-16 lg:mt-0 mt-2 ml-24 '>
+          <div className='text-3xl lg:text-7xl font-r2 flex flex-row lg:flex-col '>
+            <div>{initialYear.toUpperCase().substring(0, 5)}</div>
+            <div>{initialYear.toUpperCase().substring(5, 11)}</div>
           </div>
-          <div className="border-t-2 border-white mt-20 lg:mt-80 mr-4"></div>
-          <div className="text-xl lg:text-2xl mt-2 text-slate-300 font- hover:brightness-150">
+<div className='flex flex-col lg:flex-col md:flex-col w-full  '>
+            
+<div className="border-t-2 border-white lg:mt-80 lg:w-full w-3/4 -ml-6  lg:ml-0 lg:mr-4"></div>
+          <div className="text-1xl lg:text-2xl mt-2 text-slate-300 ml-16 lg:ml-0 font- hover:brightness-150">
             <button onClick={() => setYear('finalyear')}>FINAL YEAR</button>
           </div>
-          <div className="text-xl lg:text-2xl mt-2 mb-1 text-slate-300 font-sans hover:brightness-150">
+          <div className="text-1xl lg:text-2xl mt-0 lg:mb-1 ml-16 lg:ml-0  text-slate-300 font-sans hover:brightness-150">
             <button onClick={() => setYear('Thirdyear')}>THIRD YEAR</button>
           </div>
-          <div className="text-xl lg:text-2xl mb-1 text-slate-300 font-sans hover:brightness-150">
+          <div className="text-1xl lg:text-2xl lg:mb-1 text-slate-300 font-sans ml-16 lg:ml-0 hover:brightness-150">
             <button onClick={() => setYear('secondyear')}>SECOND YEAR</button>
           </div>
-          <div className="text-xl lg:text-2xl mb-1 text-slate-300 font-sans hover:brightness-150">
+          <div className="text-1xl lg:text-2xl lg:mb-1 text-slate-300 font-sans ml-16 lg:ml-0 hover:brightness-150">
             <button onClick={() => setYear('firstyear')}>FIRST YEAR</button>
           </div>
+</div>
         </div>
       </div>
     </div>
