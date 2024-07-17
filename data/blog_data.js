@@ -8,7 +8,8 @@
     tags: ["linux", "vim", "neovim"],
     description:
       "Vim is a great text editor, in fact some would argue it is the best text editor! But the problem is that it is just a text editor. Nothing more, nothing less...",
-    // mdfile: vim_plugins, 
+
+    
   },
   {
     id: 2,

@@ -3,3 +3,4 @@ declare module '*.mdx' {
     export default MDXComponent;
   }
   
+  declare module 'accepts';
