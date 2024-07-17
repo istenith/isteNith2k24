@@ -59,7 +59,7 @@ const Team = () => {
                   alt=""
                   className="h-64 w-64 lg:ml-0  drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                 />
-                <div className="bg-[#1E1E1E] lg:absolute absolute ml-40  bottom-2 lg:mr-0 lg:mt-0  lg:bottom-2  lg:right-6 flex  text-white opacity-80 hover:opacity-100 transition-opacity duration-300">
+                <div className="bg-[#1E1E1E] lg:absolute absolute ml-40  bottom-2 lg:mr-0 lg:mt-0  lg:bottom-2  lg flex  text-white opacity-80 hover:opacity-100 transition-opacity duration-300">
                   <Link href={details.instagram} className="flex items-center justify-center ml-2 h-8 w-8">
                     <FaInstagram />
                   </Link>
