@@ -39,7 +39,7 @@ export default function Page({ params } :any){
 
         <div className="min-h-screen  bg-custom-gray1 text-white">
             <div className="flex flex-col lg:flex-row ">
-                <div className="w-full lg:w-1/5 lg:mt-24 fixed top-0 pt-7 pb-3 z-50 lg:ml-80 lg:fixed text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start bg-custom-gray1 lg:bg-transparent ">
+                <div className="w-full lg:w-1/5 lg:mt-24 fixed lg:-top-10 pt-7 pb-3 z-50 lg:ml-80 lg:fixed text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start bg-custom-gray1 lg:bg-transparent ">
                     <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-4">B</div>
                     <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-4">L</div>
                     <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-4">O</div>

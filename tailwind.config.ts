@@ -12,6 +12,8 @@ const config: Config = {
       r2: ['Raleway'],
       f2: ['Barlow', 'sans-serif'],
       actor: ['Actor', 'sans-serif'],
+      'barlow': ['Barlow', 'sans-serif'],
+
 
     },
     
@@ -20,6 +22,8 @@ const config: Config = {
         '155': '155px', // Add your custom height
       },
       colors: {
+        'custom-black': "#252525",
+        'custom-white': "#F2F2F2",
         'custom-gray': '#1E1E1E',
         'custom-color': '#AE9B9B',
         'custom-gray1': '#171616',
@@ -36,7 +40,8 @@ const config: Config = {
         },
       },
       textColor: {
-        'white-60': 'rgba(255, 255, 255, 0.6)', // 60% opacity white for text
+        'white-60': 'rgba(255, 255, 255, 0.6)',
+        'text-black': "#000000" // 60% opacity white for text
       },
       borderColor: {
         'white-60': 'rgba(255, 255, 255, 0.6)', // 60% opacity white for borders
