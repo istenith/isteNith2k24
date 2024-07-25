@@ -11,8 +11,10 @@ const config: Config = {
     extend: {},
 
       fontFamily: {
-        desc: ['Encode Sans Expanded'],
-        head: ['Raleway'],
+        'sans': ['Raleway', 'sans-serif'],
+        desc: ['Barlow'],
+        head: ['Actor'],
+
       },
 
     
