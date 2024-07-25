@@ -28,6 +28,6 @@
     ".next/types/**/*.ts",
     "src/app/members/page.jsx",
     "global.d.ts"
-  ],
+, "src/app/projects/page.tsx"  ],
   "exclude": ["node_modules"]
 }
