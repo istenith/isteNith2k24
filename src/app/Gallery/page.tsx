@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { data } from '../../../Data/data';
+import { data } from '../../../data/data';
 import { useState } from 'react';
 
 

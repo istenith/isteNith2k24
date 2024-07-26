@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { data } from '../../../../Data/data';
+import { data } from '../../../../data/data';
 import { useParams } from 'next/navigation';
 
 const Gallery: React.FC = () => {
