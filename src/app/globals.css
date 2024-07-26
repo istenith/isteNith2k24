@@ -2,34 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@layer base{
+  body {
+    background-color: #1E1E1E;
+    font-family: 'Actor', sans-serif;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.slick-slide > div {
+  margin: 0 15px 0  15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.slick-dots li.slick-active button:before {
+  color:rgb(0, 255, 119) !important;
+}
+/* Example styles for arrows */
+.slick-prev,
+.slick-next {
+  width: 10px;
+  height:10px ;
+  color:white;
+  margin-left:30px;
+  margin-right:60px;
+  z-index: 20;
+
+
+}
+ 
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px; /* Adjust arrow icon size */
+; /* Arrow color */
+
+}
+
+/* Optional: Adjust arrow position */
+.slick-prev {
+  left: -50px; /* Adjust left position */
+}
+
+.slick-next {
+  right: -50px; /* Adjust right position */
 }
