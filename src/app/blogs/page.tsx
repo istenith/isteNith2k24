@@ -28,12 +28,12 @@ export default function Home() {
 
     <div className="min-h-screen bg-custom-gray1 ">
       <div className="flex flex-row lg:flex-row">
-        <div className="w-full z-50 fixed lg:w-1/5 lg:mt-10 lg:ml-80 lg:fixed  flex flex-row justify-center lg:flex-col pt-8 lg:pt-0  lg:justify-start bg-custom-gray1 lg:bg-transparent">
-          <div className=" text-6xl lg:text-141px  font-r2 text-white-48 mb-3">B</div>
-          <div className=" text-6xl lg:text-141px font-r2 text-white-48 mb-3">L</div>
-          <div className="text-white-48 font-r2 lg:-ml-4 text-6xl  lg:text-141px  -ml-1 mb-3">O</div>
-          <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px  -ml-1 mb-3">G</div>
-          <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px -ml-1 mb-3">S</div>
+        <div className="w-full z-50 fixed lg:w-1/5 lg:mt-7 lg:ml-80 lg:fixed  flex flex-row justify-center lg:flex-col pt-8 lg:pt-0  lg:justify-start bg-custom-gray1 lg:bg-transparent">
+          <div className=" text-6xl lg:text-141px  font-r2 text-white-48 mb-2">B</div>
+          <div className=" text-6xl lg:text-141px font-r2 text-white-48 mb-2">L</div>
+          <div className="text-white-48 font-r2 lg:-ml-4 text-6xl  lg:text-141px  -ml-1 mb-2">O</div>
+          <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px  -ml-1 mb-2">G</div>
+          <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px -ml-1 mb-0">S</div>
         </div>
 
         <div className="w-full md:w-11/12 mx-7 md:px-16 lg:px-8 lg:w-6/12 mt-24 lg:mt-4 lg:p-4 lg:ml-auto lg:mr-28 lg:pr-16  ">
