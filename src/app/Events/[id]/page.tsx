@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 
 const Gallery: React.FC = () => {
   const params = useParams<{ id: string }>();
-  const id = params.id || "pahal"; // Default value if id is not available
+  const id = params.id || "pahal"; 
 
   const [property, setProperty] = useState(id);
 
