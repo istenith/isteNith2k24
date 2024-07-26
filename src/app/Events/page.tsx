@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import Link from "next/link"
 
 
 export default function Event() {
@@ -30,7 +32,7 @@ export default function Event() {
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Hult Prize's Gallery</div>
+<Link href={`/Events/hult`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Hult Prize's Gallery</div></Link>
           <div className="miniboxes flex gap-3 justify-center">
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3"></div>
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3"></div>
@@ -56,7 +58,9 @@ export default function Event() {
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0">View Prodyogiki's Gallery</div>
+        <Link href={`/Events/prody`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Prodyogiki's Gallery</div></Link>
+
+
           <div className="miniboxes flex gap-3 justify-center">
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3">Even Semester</div>
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3">Audi & Old LH</div>
@@ -81,7 +85,7 @@ export default function Event() {
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0">View Pahal's Gallery</div>
+        <Link href={`/Events/pahal`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Pahal's Gallery</div></Link>
           <div className="miniboxes flex gap-3 justify-center">
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3">Odd Semester</div>
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3 font-medium">Audi</div>
@@ -107,7 +111,9 @@ export default function Event() {
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0">View Prarambh's Gallery</div>
+        <Link href={`/Events/prarambh`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Prarambh's Gallery</div></Link>
+
+
           <div className="miniboxes flex gap-3 justify-center">
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3">Odd Semester</div>
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3 font-medium">Audi</div>
