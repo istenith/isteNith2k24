@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+
 import Link from "next/link"
 
 
@@ -18,7 +18,7 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 my-12 font-head ">HULT PRIZE</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <Image
+            <img
               src="/assets/images/hult/DCS_0814.webp"
               alt=""
               className="w-full h-full object-cover"/>
@@ -47,7 +47,7 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 mt-7 md:mt-20 font-head">PRODYOGIKI</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <Image
+            <img
               src="/assets/images/prody/DSC_0268.webp"
               alt=""
               className="w-full h-full object-cover"/>
@@ -100,7 +100,7 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 mt-7 md:mt-20 font-desc">PRARAMBH</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <Image
+            <img
               src="/assets/images/prarambh/IMG_4054.webp"
               alt=""className="w-full h-full object-cover" / >
             

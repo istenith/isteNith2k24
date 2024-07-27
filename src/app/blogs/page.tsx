@@ -39,7 +39,7 @@ export default function Home() {
         <div className="w-full md:w-11/12 mx-7 md:px-16 lg:px-8 lg:w-6/12 mt-24 lg:mt-4 lg:p-4 lg:ml-auto lg:mr-28 lg:pr-16  ">
         {blogs.map(blog =>(
        
-            <div className="flex flex-col mt-12 relative h-36 " >
+            <div className="flex flex-col mt-12 relative h-36 " key={blog.meta.title}>
               <div className="border-t-2 border- white-60"></div>
               <div className="mt-4 md:text-4xl text-2xl lg:text-4xl font-r2 text-white-60 hover:text-slate-50 hover:cursor-pointer lg:px-1 ">
               <Link href={'/blogs/' + blog.slug} passHref key={blog.slug}>

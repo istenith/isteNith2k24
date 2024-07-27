@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing arrow icons
