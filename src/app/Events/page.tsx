@@ -12,7 +12,7 @@ export default function Event() {
         </div>
       </div>
 
-      {/* Hult Prize */}
+    
       <div>
         <div className="mx-4 md:mx-8">
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 my-12 font-head ">HULT PRIZE</div>
