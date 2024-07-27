@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { data } from '../../../../data/data';
 import { useParams } from 'next/navigation';
+import Image from 'next/image'
 
 const Gallery: React.FC = () => {
   const params = useParams<{ id: string }>();
@@ -52,7 +53,7 @@ const Gallery: React.FC = () => {
             ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
             `}
           >
-            <img
+            <Image
               src={item.image}
               alt=""
               className="w-full h-full rounded-xl object-cover"/>

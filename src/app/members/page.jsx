@@ -1,4 +1,5 @@
 "use client";
+import Image from next/image;
 import React, { useState } from 'react';
 import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
 import { FaInstagram } from "react-icons/fa";
@@ -54,7 +55,7 @@ const Team = () => {
           {filteredProfiles.map((details, index) => (
             <div className="w-full " key={index}>
               <div className="flex flex-col relative">
-                <img
+                <Image
                   src={details.img}
                   alt=""
                   className="h-64 w-64 lg:ml-0  drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
