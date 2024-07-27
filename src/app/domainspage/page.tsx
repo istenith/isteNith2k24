@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing arrow icons
 
 const DomainPage = () => {
   const [domain, setDomain] = useState<{ title: string; description: string; image: string; rotation: string; } | null>(null);
@@ -49,16 +50,15 @@ const DomainPage = () => {
   const currentDomain = domains[currentIndex];
 
   return (
-    <div className="min-h-screen bg-1e1e1e mt-domainpage text-white flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl mb-8 font-bold raleway-regular py-10 sm:text-7xl">DOMAINS</h1>
+    <div className="min-h-screen bg-1e1e1e mt-domainpage text-white flex flex-col items-center justify-center p-4 relative">
+      <h1 className="text-4xl mb-8 font-barlow py-10 sm:text-7xl">DOMAINS</h1>
       <div className="w-full">
         <div {...handlers} className="flex h-full space-x-7 overflow-x-auto sm:flex-wrap sm:justify-center lg:flex-nowrap hide-scrollbar swipeable-view">
-          
           {domains.map((domain, index) => (
             <div
               key={index}
               onClick={() => { setDomain(domain); setCurrentIndex(index); }}
-              className={`card cursor-pointer p-4 bg-cover bg-center transition-transform transform hover:scale-105 ${index === currentIndex ? '' : 'hidden'} mx-auto  h-cards w-cards min-w-[80%] sm:min-w-[45%] lg:min-w-[20%] ${domain.rotation} card-${index}`}
+              className={`card cursor-pointer p-4 bg-cover bg-center transition-transform transform hover:scale-105 ${index === currentIndex ? '' : 'hidden'} mx-auto h-cards w-cards min-w-[80%] sm:min-w-[45%] lg:min-w-[20%] ${domain.rotation} card-${index}`}
               style={{ backgroundImage: `url(${domain.image})` }}
             ></div>
           ))}
@@ -80,6 +80,12 @@ const DomainPage = () => {
           <p className="text-xl sm:text-2xl">{currentDomain.description}</p>
         </div>
       )}
+      <div className="absolute left-0 top-svg transform -translate-y-1/2 block lg:hidden">
+        <FaChevronLeft className="w-10 h-10 text-white cursor-pointer " onClick={() => handleSwipe('right')} />
+      </div>
+      <div className="absolute right-4 top-svg transform -translate-y-1/2 block lg:hidden">
+        <FaChevronRight className="w-10 h-10 text-white cursor-pointer " onClick={() => handleSwipe('left')} />
+      </div>
     </div>
   );
 };

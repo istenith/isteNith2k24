@@ -47,9 +47,9 @@ return (
   <span className="text-white text-opacity-60 font-thin ml-nith text-7xl">NITH</span>
 
   <div className="flex flex-col items-center justify-center absolute top-iste left-1/4">
-    <h1 className="text-iste font-bold raleway-regular ml-iste -mt-60 :text-4xl">ISTE</h1>
-    <h1 className="text-white text-opacity-50 font-bold raleway-regular text-iste ml-iste -mt-iste2 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
-    <h1 className="text-white text-opacity-20 font-bold raleway-regular text-iste ml-iste -mt-iste3" style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
+    <h1 className="text-iste font-barlow ml-iste -mt-60 :text-4xl">ISTE</h1>
+    <h1 className="text-white text-opacity-50 font-barlow text-iste ml-iste -mt-iste2 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
+    <h1 className="text-white text-opacity-20 font-barlow text-iste ml-iste -mt-iste3" style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
   </div>
   <div className="relative">
   
@@ -115,13 +115,13 @@ return (
 
 
 <div className="mt-isteimg relative text-white">
-  <div className="relative">
+  <div className="relative mt-10">
     <img
       src="assets\images\util\Copy of DCS_0632 (1).webp"
       className="w-full h-auto flex opacity-50 mx-auto object-cover object-center sm:w-isteimg sm:h-isteimg sm:mt-isteimg"
     />
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="absolute text-3xl font-bold raleway-regular ml-about mt-about z-10 lg:text-6xl ">
+      <div className="absolute text-3xl font-barlow ml-about mt-about z-10 lg:text-6xl ">
         ABOUT US
       </div>
       
