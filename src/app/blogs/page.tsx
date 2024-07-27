@@ -26,7 +26,7 @@ export default function Home() {
        
   return (
 
-    <div className="min-h-screen bg-custom-gray1 ">
+    <div className="min-h-screen     background-color: #1E1E1E; ">
       <div className="flex flex-row lg:flex-row">
         <div className="w-full z-50 fixed lg:w-1/5 lg:mt-7 lg:ml-80 lg:fixed  flex flex-row justify-center lg:flex-col pt-8 lg:pt-0  lg:justify-start bg-custom-gray1 lg:bg-transparent">
           <div className=" text-6xl lg:text-141px  font-r2 text-white-48 mb-2">B</div>
