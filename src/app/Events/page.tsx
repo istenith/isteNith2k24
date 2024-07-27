@@ -3,9 +3,12 @@ import Image from "next/image";
 import Link from "next/link"
 
 
+
 export default function Event() {
   return (
+    
     <div className="min-h-screen bg-[#1E1E1E] text-white">
+
       <div className="flex justify-center bg-white">
         <div className="text-black text-[60px] md:text-[120px] p-3 font-desc">
           EVENTS

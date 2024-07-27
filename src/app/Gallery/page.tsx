@@ -2,6 +2,7 @@
 import React from 'react';
 import { data } from '../../../data/data';
 import { useState } from 'react';
+import Navbar from '../components/navbar';
 
 
 
@@ -14,7 +15,7 @@ const gridcss = "sm:h-16 h-9 w-[28%] text-md sm:text-4xl rounded-full hover:curs
   return (
     
     <div className="bg-[#1E1E1E] text-white min-h-screen">
-      <div className="text-desc sm:text-9xl text-5xl font-extralight mx-24 mt-11 mb-11">
+      <div className="text-desc sm:text-9xl text-5xl font-extralight mx-24 pt-11 mb-11">
         GALLERY
       </div>
      
