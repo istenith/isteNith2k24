@@ -24,7 +24,7 @@ export default function Event() {
               className="w-full h-full object-cover"/>
             </div>
             <div className="text mx-0 md:mx-8 text-white font-desc text-lg md:text-[29px] md:leading-8">
-              The Hult Prize is an international competition that challenges university students to create innovative solutions for global issues. Founded by Ahmad Ashkar and funded by Bertil Hult, it awards $1 million in seed capital to the winning team to launch a social enterprise. Partnered with Hult International Business School and the United Nations Foundation, it’s called the "Nobel Prize for students" by Nobel laureate Muhammad Yunus.
+              {`The Hult Prize is an international competition that challenges university students to create innovative solutions for global issues. Founded by Ahmad Ashkar and funded by Bertil Hult, it awards $1 million in seed capital to the winning team to launch a social enterprise. Partnered with Hult International Business School and the United Nations Foundation, it’s called the "Nobel Prize for students" by Nobel laureate Muhammad Yunus.`}
               <br />
               <br />
               At ISTE NITH, we proudly host and conduct the on-campus round of the Hult Prize.
@@ -32,7 +32,7 @@ export default function Event() {
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-<Link href={`/events/hult`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Hult Prize's Gallery</div></Link>
+<Link href={`/events/hult`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Hult Prizes Gallery</div></Link>
           <div className="miniboxes flex gap-3 justify-center">
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3"></div>
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3"></div>
@@ -58,7 +58,7 @@ export default function Event() {
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-        <Link href={`/events/prody`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Prodyogiki's Gallery</div></Link>
+        <Link href={`/events/prody`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Prodyogiki Gallery</div></Link>
 
 
           <div className="miniboxes flex gap-3 justify-center">
@@ -80,12 +80,12 @@ export default function Event() {
               alt="" className="w-full h-full object-cover"/>
             </div>
             <div className="text mx-0 md:mx-8 text-white font-desc text-lg md:text-[29px] md:leading-8">
-              Team ISTE at NIT Hamirpur is taking an initiative called PAHAL to support freshers during the admission process. We understand that starting college can be overwhelming, and that's why we are here to help. Our dedicated help desk and in-person guidance will provide you with the assistance and information you need to navigate the admission process smoothly. With PAHAL, we extend a helping hand, ensuring a confident start to your academic journey and making your transition to college life a seamless experience at NIT Hamirpur.
+              Team ISTE at NIT Hamirpur is taking an initiative called PAHAL to support freshers during the admission process. We understand that starting college can be overwhelming, and that is why we are here to help. Our dedicated help desk and in-person guidance will provide you with the assistance and information you need to navigate the admission process smoothly. With PAHAL, we extend a helping hand, ensuring a confident start to your academic journey and making your transition to college life a seamless experience at NIT Hamirpur.
             </div>
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-        <Link href={`/events/pahal`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Pahal's Gallery</div></Link>
+        <Link href={`/events/pahal`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Pahal Gallery</div></Link>
           <div className="miniboxes flex gap-3 justify-center">
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3">Odd Semester</div>
             <div className="w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-desc text-lg px-3 font-medium">Audi</div>
@@ -106,12 +106,12 @@ export default function Event() {
             
             </div>
             <div className="text mx-0 md:mx-8 text-white font-desc text-lg md:text-[29px] md:leading-8">
-              "Prarambh" – an exciting event by ISTE NIT Hamirpur that introduces you to the inspiring world of ISTE, a technical society dedicated to fostering innovation and excellence. Experience thrilling technical competitions, engaging workshops, thought-provoking seminars, and much more. Join us to unlock your potential, forge meaningful connections, and embark on a remarkable college journey filled with growth and success. Get ready to ignite your passion with ISTE NIT Hamirpur at Prarambh!
+              Prarambh – an exciting event by ISTE NIT Hamirpur that introduces you to the inspiring world of ISTE, a technical society dedicated to fostering innovation and excellence. Experience thrilling technical competitions, engaging workshops, thought-provoking seminars, and much more. Join us to unlock your potential, forge meaningful connections, and embark on a remarkable college journey filled with growth and success. Get ready to ignite your passion with ISTE NIT Hamirpur at Prarambh!
             </div>
           </div>
         </div>
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
-        <Link href={`/events/prarambh`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Prarambh's Gallery</div></Link>
+        <Link href={`/events/prarambh`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-xl items-center justify-center font-desc md:mt-0 mt-3 mb-4 md:mb-0 ">View Prarambhs Gallery</div></Link>
 
 
           <div className="miniboxes flex gap-3 justify-center">

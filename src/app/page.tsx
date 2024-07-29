@@ -133,7 +133,7 @@ return (
       <p className="text-xl text-white opacity-100 text-center sm:text-3xl sm:text-left md:text-2xl lg:text-3xl">
         The Indian Society for Technical Education (ISTE) is the leading
         National Professional non-profit making Society for the Technical
-        Education System in our country. The Students' Chapter NIT Hamirpur is
+        Education System in our country. The Students Chapter NIT Hamirpur is
         the representative at NIT Hamirpur to promote such technical culture in
         our college. We at NITH, conduct various events within the college and
         also participate in inter-college fests.
