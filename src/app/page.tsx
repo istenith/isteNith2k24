@@ -173,8 +173,8 @@ return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-1616 text-white mt-28">
       <h1 className=" text-5xl sm:text-12xl font-barlow  mb-8">CONTACT</h1>
       <p className="text-1xl sm:text-4xl  text-white opacity-70 mb-16  p-7 text-center font-sans">
-        Have a question or need assistance? Our team's always ready to help.
-        Feel free to reach out, and we'll be delighted to aid you by providing heartfelt support.
+        Have a question or need assistance? Our team is always ready to help.
+        Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>
       <div className="contact-details flex flex-col sm:flex-row mt-cnt ">
         <div className="flex items-center space-x-4">
