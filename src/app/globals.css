@@ -87,12 +87,9 @@
     margin-left: 15rem;
   }
   .h-screen {
-    height: 700vh;
+    height: 450vh;
   
-  .text-contact{
-    font-size: 9.75rem;
-    line-height: 1;
-  }
+  
   .text-cnt {
     font-size: 2.125rem;
     line-height: 2.75rem;

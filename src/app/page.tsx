@@ -4,9 +4,9 @@ import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 import Image from 'next/image';
 import Head from 'next/head';
-//import { BiSolidContact } from "react-icons/bi";
-//import { FaMapLocationDot } from "react-icons/fa6";
-//import { HiOutlineMailOpen } from "react-icons/hi";        (contact pg icons)
+import { BiSolidContact } from "react-icons/bi";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { HiOutlineMailOpen } from "react-icons/hi";        
 import React, { useState } from 'react';
 import DomainPage from './domainspage/page';
 
@@ -168,38 +168,38 @@ return (
 
 
 
-{/* 
 
-      <div className="flex flex-col items-center justify-center min-h-screen bg-1616 text-white">
-      <h1 className="text-contact font-bold raleway-regular mb-8">CONTACT</h1>
+
+      <div className="flex flex-col items-center justify-center min-h-screen bg-1616 text-white mt-28">
+      <h1 className=" text-5xl sm:text-12xl font-barlow mb-8">CONTACT</h1>
       <p className="text-cnt  text-white opacity-70 mb-16  p-7 text-center font-sans">
         Have a question or need assistance? Our team's always ready to help.
         Feel free to reach out, and we'll be delighted to aid you by providing heartfelt support.
       </p>
-      <div className="contact-details flex flex-row items-center space-x-10">
+      <div className="contact-details flex flex-col sm:flex-row">
         <div className="flex items-center space-x-4">
-          <FaMapLocationDot className="size-16 mb-contactbottom ml-60" />
+          <FaMapLocationDot className="size-16 mb-contactbottom  ml-16 sm:ml-36" />
           <div>
             <p className="text-sm">Address</p>
             <p className="text-lg">NIT, Hamirpur<br />Himachal Pradesh, India, 177001</p>
           </div>
         </div>
-        <div className="flex items-center space-x-16">
-          <BiSolidContact className="size-16 mb-contactbottom ml-60" />
+        <div className="flex items-center space-x-4">
+          <BiSolidContact className="size-16 mb-contactbottom ml-16 sm:ml-36" />
           <div>
             <p className="text-sm">Phone</p>
             <p className="text-lg">12345578</p>
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <HiOutlineMailOpen className="size-16 mb-contactbottom ml-60" />
+          <HiOutlineMailOpen className="size-16 mb-contactbottom ml-16 sm:ml-36" />
           <div>
             <p className="text-sm mr-5" >Email</p>
             <p className="text-lg mr-5">iste@nith.ac.in</p>
           </div>
         </div>
       </div>
-    </div>*/}
+    </div>
  </div> 
 );};
 
