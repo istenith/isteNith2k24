@@ -1,11 +1,11 @@
 export const data = [
   // PRODY
     {
-      image: '/assets/images/prody/DCS_0393.webp',
+      image: '/assets/images/prody/DSC_0268.webp',
       event:'prody'
     },
     {
-      image: '/assets/images/prody/DSC_0268.webp',
+      image: '/assets/images/prody/DCS_0393.webp',
       event:'prody'
     },
     {
