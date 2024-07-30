@@ -4,7 +4,6 @@ import { data } from '../../../data/data';
 import { useState } from 'react';
 
 
-
 const Gallery: React.FC = () => {
   
 const [Property, setProperty] = useState("pahal");
@@ -52,11 +51,13 @@ const gridcss = "sm:h-16 h-9 w-[28%] text-md sm:text-4xl rounded-full hover:curs
               src={item.image}
               alt=""
               className="w-full h-full rounded-xl object-cover"/>
+               
             </div>
         ))}
+         
       </div>
     </div>
-    
+   
   
   );
 };

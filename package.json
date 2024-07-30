@@ -22,6 +22,7 @@
     "contentlayer": "^0.3.4",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "framer-motion": "^11.3.19",
     "graphql": "^16.9.0",
     "graphql-tag": "^2.12.6",
     "gray-matter": "^4.0.3",

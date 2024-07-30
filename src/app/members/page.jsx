@@ -105,6 +105,7 @@ const Team = () => {
 </div>
         </div>
       </div>
+     
     </div>
   );
 };
@@ -114,5 +115,6 @@ const TeamWithApollo = () => (
     <Team />
   </ApolloProvider>
 );
+
 
 export default TeamWithApollo;
