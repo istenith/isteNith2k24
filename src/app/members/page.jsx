@@ -43,7 +43,7 @@ const Team = () => {
   const filteredProfiles = data.members.filter(profile => profile.section === initialYear);
 
   return (
-    <div className="min-h-screen bg-[#1E1E1E] text-white">
+    <div className="min-h-screen   background-color: #1E1E1E text-white">
 
 <div className=' bg-[#1E1E1E] lg:w-full  lg:fixed top-0 z-50 '>
         <div className="lg:mx-10 lg:pt-12 md:mx-60 pt-2 ml-24 text-4xl md:text-6xl lg:px-4 font-r2">ISTE NITH</div>

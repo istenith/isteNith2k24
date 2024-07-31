@@ -37,19 +37,19 @@ export default function Page({ params } :any){
     return (
 
 
-        <div className="min-h-screen      background-color: #1E1E1E; text-white">
+        <div className="min-h-screen  bg-[#1e1e1e]   text-white">
             <div className="flex flex-col lg:flex-row ">
-                <div className="w-full lg:w-1/5 lg:mt-24 fixed lg:-top-10 pt-7 pb-3 z-50 lg:ml-80 lg:fixed text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start   background-color: #1E1E1E;  lg:bg-transparent ">
-                    <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-4">B</div>
-                    <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-4">L</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-4">O</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-4">G</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-4">S</div>
+                <div className="w-full lg:w-1/5 lg:mt-24  lg:-top-10 pt-7 pb-3 z-50 lg:ml-80 lg:fixed text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start    lg:bg-transparent ">
+                    <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-1">B</div>
+                    <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-1">L</div>
+                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-1">O</div>
+                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-1">G</div>
+                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-1">S</div>
                 </div>
 
                 <div className="w-full  md:w-3/4 md:ml-28 px-4 lg:w-7/12 mt-2 md:mt-4 lg:mt-4 lg:pl-40 lg:ml-116 ">
 
-                    <div className="flex flex-col mt-28 lg:mt-16 ">
+                    <div className="flex flex-col mt-4 lg:mt-16 ">
                         <div className="border-t-2 border-white"></div>
                         <div className="lg:mt-2 py-2 md:pt-2 px-1 text-2xl md:text-3xl lg:text-3xl font-actor lg:px-2">{props.fontMatter.title}</div>
                         <div className="bg-custom-grayblog-53 rounded-md lg:mt-8 p-2 mt-8 lg:p-6">

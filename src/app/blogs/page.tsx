@@ -26,17 +26,17 @@ export default function Home() {
        
   return (
 
-    <div className="min-h-screen     background-color: #1E1E1E; ">
-      <div className="flex flex-row lg:flex-row">
-        <div className="w-full z-50 fixed lg:w-1/5 lg:mt-12 lg:ml-80 lg:fixed  flex flex-row justify-center lg:flex-col pt-8 lg:pt-0  lg:justify-start bg-custom-gray1 lg:bg-transparent">
-          <div className=" text-6xl lg:text-141px  font-r2 text-white-48 mb-2">B</div>
-          <div className=" text-6xl lg:text-141px font-r2 text-white-48 mb-2">L</div>
-          <div className="text-white-48 font-r2 lg:-ml-4 text-6xl  lg:text-141px  -ml-1 mb-2">O</div>
-          <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px  -ml-1 mb-2">G</div>
+    <div className="min-h-screen     bg-[#1e1e1e] ">
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full z-50  lg:w-1/5 lg:mt-9 lg:ml-80 lg:fixed  flex flex-row justify-center lg:flex-col pt-8 lg:pt-0 bg-[#1e1e1e] lg:justify-start lg:bg-transparent">
+          <div className=" text-6xl lg:text-141px  font-r2 text-white-48 mb-1">B</div>
+          <div className=" text-6xl lg:text-141px font-r2 text-white-48 mb-1">L</div>
+          <div className="text-white-48 font-r2 lg:-ml-4 text-6xl  lg:text-141px  -ml-1 mb-1">O</div>
+          <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px  -ml-1 mb-1">G</div>
           <div className="text-white-48 font-r2 lg:-ml-4  text-6xl lg:text-141px -ml-1 mb-0">S</div>
         </div>
 
-        <div className="w-full md:w-11/12 mx-7 md:px-16 lg:px-8 lg:w-6/12 mt-24 lg:mt-4 lg:p-4 lg:ml-auto lg:mr-28 lg:pr-16  ">
+        <div className=" md:w-11/12 mx-7 md:px-16 lg:px-8 lg:w-6/12 mt-0 lg:mt-4 lg:p-4 lg:ml-auto lg:mr-28 lg:pr-16  ">
         {blogs.map(blog =>(
        
             <div className="flex flex-col mt-12 relative h-36 " key={blog.meta.title}>
