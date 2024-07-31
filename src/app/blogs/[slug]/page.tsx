@@ -1,9 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-
-
+import OverflowDropdown from "../../../components/OverflowDropdown"
 import { MDXRemote } from 'next-mdx-remote/rsc'
+
 
 export async function generateStaticParams(){
 
@@ -33,6 +33,7 @@ function getPost({slug}: {slug: string}){
 
 export default function Page({ params } :any){
     const props = getPost( params);
+
 
     return (
 
