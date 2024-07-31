@@ -37,9 +37,9 @@ export default function Event() {
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
 <Link href={`/events/hult`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-2xl items-center justify-center font-actor md:mt-0 mt-3 mb-4 md:mb-0 "><div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer">View Hult Prize's Gallery</div></div></Link>
           <div className="miniboxes flex gap-3 justify-center">
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3"></div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3"></div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3"></div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Even Semester</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Audi</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Last held in Jan 2023</div>
           </div>
         </div>
       </div>
@@ -65,9 +65,9 @@ export default function Event() {
 
 
           <div className="miniboxes flex gap-3 justify-center">
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3">Even Semester</div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3">Audi & Old LH</div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3">Last held in April 2024</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Even Semester</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3 ">Audi & Old LH</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Last held in April 2024</div>
           </div>
         </div>
       </div>
@@ -90,9 +90,9 @@ export default function Event() {
         <div className="boxset2 flex flex-col md:flex-row mx-4 md:mx-8">
         <Link href={`/events/pahal`}>          <div className="flex bg-white w-full md:w-[38rem] h-[120px] mr-0 md:mr-8 text-black text-2xl items-center justify-center font-actor md:mt-0 mt-3 mb-4 md:mb-0 "><div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer">View Pahal's Gallery</div></div></Link>
           <div className="miniboxes flex gap-3 justify-center">
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3">Odd Semester</div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1  text-lg px-3 ">Audi</div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1  text-lg px-3">Last held in Aug 2023</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Odd Semester</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight  text-lg px-3 ">Audi</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight  text-lg px-3">Last held in Aug 2023</div>
           </div>
         </div>
       </div>
@@ -118,9 +118,9 @@ export default function Event() {
 
 
           <div className="miniboxes flex gap-3 justify-center">
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1 text-lg px-3">Odd Semester</div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1  text-lg px-3 ">Audi</div>
-            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex font-r1  text-lg px-3">Last held in Aug 2023</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight text-lg px-3">Odd Semester</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight  text-lg px-3 ">Audi</div>
+            <div className="transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer w-[120px] h-[120px] bg-[#7D7B7B] items-center justify-center flex encode-sans-expanded-extralight  text-lg px-3">Last held in Aug 2023</div>
           </div>
         </div>
       </div>

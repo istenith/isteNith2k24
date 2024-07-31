@@ -14,7 +14,7 @@ const gridcss = "sm:h-16 h-9 w-[28%] text-sm sm:text-3xl rounded-full transition
   return (
     
     <div className="  background-color: #1E1E1E; text-white min-h-screen">
-      <div className="text-f2 sm:text-9xl height-155 text-5xl font-extralight mx-24 mt-11 mb-11">
+      <div className="text-f2 sm:text-9xl flex justify-center items-center md:flex-none md:justify-start md:items-start height-155 text-5xl font-extralight mx-24 mt-11 mb-6 sm:mb-11">
         GALLERY
       </div>
      
