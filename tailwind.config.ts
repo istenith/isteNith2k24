@@ -7,12 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
+    fontFamily: {'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
       r1: ['Encode Sans Expanded'],
       r2: ['Raleway'],
       f2: ['Barlow', 'sans-serif'],
       actor: ['Actor', 'sans-serif'],
-      'barlow': ['Barlow', 'sans-serif'],
+      'barlow': ['Barlow', 'sans-serif']
 
 
     },
