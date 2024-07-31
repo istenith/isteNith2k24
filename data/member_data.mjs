@@ -4,7 +4,7 @@ export const profileDetails = [
     
     { 
         name: "Aditya Rana",
-        section: "finalyear",
+        section: "final",
         post: "Design Head",
         linkedin: "https://www.linkedin.com/in/aditya-rana-6156071aa",
         instagram: "https://www.instagram.com/adt.rana/",
@@ -18,7 +18,7 @@ export const profileDetails = [
     
       {
         name: "Chandan Kumar",
-        section: "finalyear",
+        section: "final",
         post: "Vice President",
         linkedin: "https://www.linkedin.com/in/chandan-kumar-19880a22a/",
         instagram: "https://www.instagram.com/chandan_._kr/",
@@ -30,7 +30,7 @@ export const profileDetails = [
       },
       {
         name: "Charu",
-        section: "finalyear",
+        section: "final",
         post: "Treasurer",
         linkedin: "https://www.linkedin.com/in/charu-229665223",
         instagram: "https://www.instagram.com/charuchauhan575/",
@@ -42,7 +42,7 @@ export const profileDetails = [
       },
       {
         name: "Dharuva Thakur",
-        section: "finalyear",
+        section: "final",
         post: "Finance Head",
         linkedin: "https://www.linkedin.com/in/dharuva-thakur-83576122a",
         instagram: "https://www.instagram.com/dharuva_thakur/",
@@ -54,7 +54,7 @@ export const profileDetails = [
       },
       {
         name: "Ekansh Verma",
-        section: "finalyear",
+        section: "final",
         post: "Media and Marketing head",
         linkedin: "https://www.linkedin.com/in/ekansh-verma-469557228",
         instagram: "https://www.instagram.com/i_ekanshverma/",
@@ -67,7 +67,7 @@ export const profileDetails = [
       },
       {
         name: "Gargi Dhawan",
-        section: "finalyear",
+        section: "final",
         post: "Joint Secretary",
         linkedin: "https://www.linkedin.com/in/gargi-dhawan-7706a722a",
         instagram: "https://www.instagram.com/gargidh1/",
@@ -79,7 +79,7 @@ export const profileDetails = [
       },
       {
         name: "Hardik Sachdeva",
-        section: "finalyear",
+        section: "final",
         post: "Vice President",
         linkedin: "https://www.linkedin.com/in/hardik-sachdeva-a69987217",
         instagram: "https://www.instagram.com/_haardyy_/",
@@ -93,7 +93,7 @@ export const profileDetails = [
 
       {
         name: "Kanika Sharma",
-        section: "finalyear",
+        section: "final",
         post: "Operation Head",
         linkedin: "https://www.linkedin.com/in/kanika-sharma-aa274b22a",
         instagram: "https://www.instagram.com/kanika_shh/",
@@ -107,7 +107,7 @@ export const profileDetails = [
     
       {
         name: "Madhukesh Singh",
-        section: "finalyear",
+        section: "final",
         post: "Joint Tech Head",
         linkedin: "https://www.linkedin.com/in/madhukesh-singh-195618233/",
         instagram: "https://www.instagram.com/madhukesh_singh/",
@@ -119,7 +119,7 @@ export const profileDetails = [
       },
       {
         name: "Manik Singh",
-        section: "finalyear",
+        section: "final",
         post: "President",
         linkedin: "https://www.linkedin.com/in/manik-singh-021945194/",
         instagram: "https://www.instagram.com/maniksingh2002/",
@@ -131,7 +131,7 @@ export const profileDetails = [
       },
       {
         name: "Mehul Aggarwal",
-        section: "finalyear",
+ section: "final",
         post: "Technical Head",
         linkedin: "https://www.linkedin.com/in/mehul-aggarwal-47285421b/",
         instagram: "https://www.instagram.com/mehul_tp26/",
@@ -144,8 +144,8 @@ export const profileDetails = [
       },
       {
         name: "Navdeep Kaur",
-        section: "Joint PR Head",
-        post: "finalyear",
+        section: "final",
+        post: "oint PR Head",
         linkedin: "https://www.linkedin.com/in/navdeep-kaur-44375022a/",
         instagram: "https://www.instagram.com/navikaur_612/",
         img: "/assets/images/finalyear/navdeep.webp",
@@ -156,7 +156,7 @@ export const profileDetails = [
       },
       {
         name: "Shashank Shekhar",
-        section: "finalyear",
+        section: "final",
         post: "Secretary",
         linkedin: "https://www.linkedin.com/in/shashank-shekhar-196786229/",
         instagram: "https://www.instagram.com/sshekharr28/",
@@ -167,7 +167,7 @@ export const profileDetails = [
       },
       {
         name: "Shariq Verma",
-        section: "finalyear",
+        section: "final",
         post: "Creative Head",
         linkedin: "https://www.linkedin.com/in/shariq-verma-94a75122a",
         instagram: "https://www.instagram.com/shariq_verma/",
@@ -180,7 +180,7 @@ export const profileDetails = [
       },
       {
         name: "Siya Rana",
-        section: "finalyear",
+        section: "final",
         post: "Operation Head",
         linkedin: "https://www.linkedin.com/in/siya-rana-b07639221",
         instagram: "https://www.instagram.com/siyarana18_/",
@@ -193,7 +193,7 @@ export const profileDetails = [
       },
       {
         name: "Swastik Sharma",
-        section: "finalyear",
+        section: "final",
         post: "Joint Secretary",
         linkedin: "https://www.linkedin.com/in/swastkk",
         instagram: "https://www.instagram.com/swastik.sharmaa/",
@@ -206,7 +206,7 @@ export const profileDetails = [
       },
       {
         name: "Jeevak Sangodkar",
-        section: "finalyear",
+        section: "final",
         post: "PR Head",
         linkedin: "https://www.linkedin.com/in/jeevak-sangodkar-919653228/",
         instagram: "https://www.instagram.com/jeevaks17/",
@@ -219,7 +219,7 @@ export const profileDetails = [
 
       {
         name: "Kuldeep Kumar",
-        section: "finalyear",
+        section: "final",
         post: "Logistic Head",
         linkedin: "https://www.linkedin.com/in/kuldeep-kumar-205a9b229/",
         instagram: "https://www.instagram.com/_.kuldeep_kumar._/",
@@ -238,7 +238,7 @@ export const profileDetails = [
 
 
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Abhimanyu Singh",
     branch: "Computer Science and Engineering (Dual Degree)",
     location: "Bareilly, Uttar Pradesh",
@@ -248,7 +248,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Aditya Sharma",
     branch: "Chemical Engineering",
     location: "Haridwar, Uttarakhand",
@@ -258,7 +258,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Ankur Yadav",
     branch: "Mathematics and Scientific Computing",
     location: "Solan, Himachal Pradesh",
@@ -268,7 +268,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Anshuman Payasi",
     branch: "Electrical Engineering",
     location: "Rewa, Madhya Pradesh",
@@ -278,7 +278,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Anurag Tripathi",
     branch: "Civil Engineering",
     location: "Lucknow, Uttar Pradesh",
@@ -289,7 +289,7 @@ export const profileDetails = [
   },
 
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Ayan Choradia",
 
     branch: "Electrical Engineering",
@@ -300,7 +300,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Ayushi Shukla",
     branch: "Mechanical Engineering",
     location: "Lucknow, Uttar Pradesh",
@@ -310,7 +310,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Gugli Thakur",
     branch: "Civil Engineering",
     location: "Mandi, Himachal Pradesh",
@@ -320,7 +320,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Kunal Dhiman",
     branch: "Dual CSE",
     location: "Hamirpur, Himachal Pradesh",
@@ -330,7 +330,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Laksh Bhandari",
     branch: "Mathematics and Scientific Computing",
     location: "Haldwani, Uttarakhand",
@@ -340,7 +340,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Mehul Ambastha",
     branch: "Mechanical Engineering",
     location: "Delhi, Delhi",
@@ -350,7 +350,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Sourabh Awasthy",
     branch: "Electronics and Communication Engineering",
     location: "Kangra, Himchal Pradesh",
@@ -361,7 +361,7 @@ export const profileDetails = [
   },
 
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Oshin Sharma",
     branch: "Electronics and Communication Engineering",
     location: "Una, Himachal Pradesh",
@@ -373,7 +373,7 @@ export const profileDetails = [
 
 
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Rishika Sharma",
     branch: "Material Science and Engineering",
     location: "Jodhpur, Rajasthan",
@@ -383,7 +383,7 @@ export const profileDetails = [
     post: "Co-Ordinator",
   },
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Sakshi Gothwal",
     branch: "Computer Science and Engineering",
     location: "Jaipur, Rajasthan",
@@ -394,7 +394,7 @@ export const profileDetails = [
   },
 
   {
-    section: "Thirdyear",
+    section: "Third",
     name: "Tanashvi Joshi",
     branch: "Engineering Physics",
     location: "Barabanki, Uttar Pradesh",
@@ -412,178 +412,178 @@ export const profileDetails = [
 
   {
     name: "Abhishek Sharma",
-    section: "secondyear",
+    section: "second",
     post: "Executive Members",
     branch: "Materials Science and Engineering",
     location: "Ghaziabad, Uttar Pradesh",
     linkedin: "https://www.linkedin.com/in/abhishek-sharma-958952291",
-    img: "assets/images/secondyear/Abhishek.webp",
+    img: "/assets/images/secondyear/Abhishek.webp",
     instagram: "/",
   },
 
 {
   name: "Akshit Pathania",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Computer Science and Engineering",
   location: "Kangra, Himachal Pradesh",
   instagram: "https://instagram.com/ak.shit8432?igshid=NGVhN2U2NjQ0Yg==",
   linkedin: "https://www.linkedin.com/in/akshit-pathania-62522728b",
-  img: "assets/images/secondyear/AkshitPathania.webp",
+  img: "/assets/images/secondyear/Akshit2.webp",
 },
 {
   name: "Akshit Saini",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Electronics and Communication Engineering (Dual Degree)",
   location: "Una, Himachal Pradesh",
   instagram: "https://instagram.com/akshit.rxt?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/akshit-saini-905861290",
-  img: "assets/images/secondyear/AkshitSaini.webp",
+  img: "/assets/images/secondyear/AkshitSaini.webp",
 },
 {
     name: "Amit Singh Bathyal",
-    section: "secondyear",
+    section: "second",
     post: "Executive Members",
     branch: "Civil Engineering",
     location: "Haldwani, Uttarakhand",
     instagram: "https://instagram.com/the_a_s_bathyal?igshid=YTQwZjQ0NmI0OA==",
     linkedin: "https://www.linkedin.com/in/amit-singh-bathyal-a885a2242",
-    img: "assets/images/secondyear/Amit.webp",
+    img: "/assets/images/secondyear/Amit1.webp",
   },
 {
   name: "Arihant Dogra",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Computer Science and Engineering",
   location: "Palampur, Himachal Pradesh",
   instagram: "https://instagram.com/monsieur_arihant?igshid=YTQwZjQ0NmI0OA==",
   linkedin: "https://www.linkedin.com/in/arihant-dogra-846959289",
-  img: "assets/images/secondyear/Arihant.webp",
+  img: "/assets/images/secondyear/Arihant.webp",
 },
 
 {
   name: "Ashutosh K. Sadana",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Mathematics and Scientific Computing",
   location: "Mandi, Himachal Pradesh",
   instagram: "https://instagram.com/ashutosh_sadana?igshid=NGVhN2U2NjQ0Yg==",
   linkedin: "https://www.linkedin.com/in/ashutosh-sadana-922722201",
-  img: "assets/images/secondyear/Ashutosh.webp",
+  img: "/assets/images/secondyear/AshutoshK.webp",
 },
 
 {
   name: "Avirat Mahajan",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Electronics and Communication Engineering",
   location: "Shimla, Himachal Pradesh",
   linkedin: "https://www.linkedin.com/in/avirat-mahajan-77911a289",
-  img: "assets/images/secondyear/Avirat.webp",
+  img: "/assets/images/secondyear/Avirat.webp",
   instagram: "/",
 },
 {
   name: "Devkriti Sharma",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Electrical Engineering",
   location: "Hamirpur, Himachal Pradesh",
   instagram: "https://instagram.com/04d.kriti?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/devkriti-sharma-333932291",
-  img: "assets/images/secondyear/Devkriti.webp",
+  img: "/assets/images/secondyear/Devkriti.webp",
 },
 {
   name: "Kartik Mittal",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Chemical Engineering",
   location: "Alwar, Rajasthan",
   instagram: "https://instagram.com/kartik.070811?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/kartik-mittal-72848a28a",
-  img: "assets/images/secondyear/KartikMittal.webp",
+  img: "/assets/images/secondyear/KartikMittal.webp",
 },
 {
   name: "Kashyap Saksham Kumar",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Mechanical Engineering",
   location: "Patna, Bihar",
   instagram: "https://instagram.com/k.saksham.k?igshid=NGVhN2U2NjQ0Yg==",
   linkedin: "https://www.linkedin.com/in/kashyap-saksham-kumar-14b703291",
-  img: "assets/images/secondyear/Saksham.webp",
+  img: "/assets/images/secondyear/Saksham.webp",
 },
 {
   name: "Mannat Katna",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Engineering Physics",
   location: "Solan, Himachal Pradesh",
   instagram: "https://instagram.com/_mannnat__?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/mannat-katna-664560289",
-  img: "assets/images/secondyear/Mannat.webp",
+  img: "/assets/images/secondyear/Mannat.webp",
 },
 {
   name: "Naman Srivastava",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Mechanical Engineering",
   location: "Prayagraj, U.P.",
   instagram: "https://instagram.com/_namansrivastava?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/naman-srivastava-035a5a234",
-  img: "assets/images/secondyear/Naman.webp",
+  img: "/assets/images/secondyear/Naman.webp",
 },
 {
   name: "Niharika Singh",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Engineering Physics",
   location: "Ghaziabad, Uttar Pradesh",
   instagram: "https://instagram.com/_singhniharika_?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/niharika-singh-303115285",
-  img: "assets/images/secondyear/Niharika.webp",
+  img: "/assets/images/secondyear/Niharika.webp",
 },
 
 
 {
   name: "Shambhav Mishra",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Mechanical Engineering",
   location: "Lucknow, Uttar Pradesh",
   instagram: "https://instagram.com/shambhavvv?igshid=NjIwNzIyMDk2Mg==",
   linkedin: "https://www.linkedin.com/in/shambhav-mishra-b70312285",
-  img: "assets/images/secondyear/Shambhav.webp",
+  img: "/assets/images/secondyear/Shambhav.webp",
 },
 {
   name: "Siya Sood",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Electronics and Communication Engineering",
   location: "Kullu, Himachal Pradesh",
   instagram: "https://instagram.com/siya__._._?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/siya-sood-002307291",
-  img: "assets/images/secondyear/siyasood.webp",
+  img: "/assets/images/secondyear/siyasood.webp",
 },
 {
   name: "Sonal Dogra",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Computer Science and Engineering (Dual Degree)",
   location: "Kangra, Himachal Pradesh",
   instagram: "https://instagram.com/sonaldogra11?igshid=OGQ5ZDc2ODk2ZA==",
   linkedin: "https://www.linkedin.com/in/sonal-dogra-bb5555291",
-  img: "assets/images/secondyear/Sonal.webp",
+  img: "/assets/images/secondyear/Sonal.webp",
 },
 {
   name: "Vedant Tiwari",
-  section: "secondyear",
+  section: "second",
   post: "Executive Members",
   branch: "Civil Engineering",
   location: "Bhopal, Madhya Pradesh",
   instagram: "https://instagram.com/eviloid.fr?igshid=NTc4MTIwNjQ2YQ==",
   linkedin: "https://www.linkedin.com/in/vedant-tiwari-3104ba262",
-  img: "assets/images/secondyear/Vedant.webp",
+  img: "/assets/images/secondyear/Vedant.webp",
 },
 
   ];

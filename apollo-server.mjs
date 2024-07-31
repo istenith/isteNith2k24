@@ -31,10 +31,10 @@ const typeDefs = gql`
     mdfile: String!
   }
 
-  type Gallery {
+ type Gallery {
     id: ID!
-    imgSrc: String!
-    tag: String
+    image: String!
+    event: String
   }
 
   type Query {
@@ -51,7 +51,10 @@ const resolvers = {
       return profileDetails;
     },
     blogPosts: () => blogPosts, // to be implemented yet
-    gallery: () => galleryData, // to be implemented yet
+    gallery: async () => {
+      const { data } = await import(path.resolve(__dirname, './data/data.ts'));
+      return data; // to be implemented yet
+  }, // to be implemented yet
   },
 };
 
