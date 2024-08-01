@@ -67,7 +67,7 @@ const Team = () => {
           {filteredProfiles.map((details, index) => (
             <motion.div
               className="w-full mb-6 md:mb-8 lg:mb-0"
-              key={index}
+              key={`${initialYear}-${index}`}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
