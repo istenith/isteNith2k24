@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { data } from '../../../../data/data';
+import { data } from '../../../../data/data.mjs';
 import { useParams } from 'next/navigation';
 import Image from 'next/image'
 

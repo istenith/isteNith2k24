@@ -52,7 +52,7 @@ const resolvers = {
     },
     blogPosts: () => blogPosts, // to be implemented yet
     gallery: async () => {
-      const { data } = await import(path.resolve(__dirname, './data/data.ts'));
+      const { data } = await import(path.resolve(__dirname, './data/data.mjs'));
       return data; // to be implemented yet
   }, // to be implemented yet
   },
