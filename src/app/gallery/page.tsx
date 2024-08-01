@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
 
-// Apollo Client setup
+
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql/', // Replace with your GraphQL endpoint
+  uri: 'http://localhost:4000/graphql/', 
   cache: new InMemoryCache(),
 });
 
-// GraphQL query
+
 const GET_EVENTS = gql`
   query GetEvents {
     gallery {
@@ -18,7 +18,7 @@ const GET_EVENTS = gql`
   }
 `;
 
-// TypeScript types for the data structure
+
 interface GalleryItem {
   image: string;
   event: string;
@@ -29,20 +29,20 @@ interface GetEventsData {
 }
 
 const Gallery: React.FC = () => {
-  // Use the query hook to fetch data
+
   const { loading, error, data } = useQuery<GetEventsData>(GET_EVENTS, {
     client,
     fetchPolicy: 'cache-first',
   });
 
-  // State for property filter
+
   const [property, setProperty] = useState<string>("pahal");
 
-  // Handle loading and error states
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
-  // Filter events based on selected property
+
   const filteredEvents = data?.gallery.filter(item => item.event === property) || [];
 
   const gridcss = "sm:h-16 h-9 w-[28%] text-md sm:text-4xl rounded-full hover:cursor-pointer font-head justify-center items-center flex";
@@ -60,7 +60,7 @@ const Gallery: React.FC = () => {
         <div onClick={() => setProperty('prarambh')} className={`${gridcss} ${property === 'prarambh' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>prarambh</div>
       </div>
        
-      {/* Grid section */}
+
       <div className="grid grid-cols-2 sm:grid-cols-8 sm:grid-rows-7 mt-8 h-[650px] sm:mx-24 mx-6 gap-3">
         {filteredEvents.map((item, i) => (
           <div
@@ -92,7 +92,7 @@ const Gallery: React.FC = () => {
   );
 };
 
-// Wrapper component with ApolloProvider
+
 const GalleryWithApollo: React.FC = () => (
   <ApolloProvider client={client}>
     <Gallery />
