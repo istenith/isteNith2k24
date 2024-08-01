@@ -53,9 +53,11 @@ const Gallery: React.FC = () => {
             ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
             `}
           >
-            <img
+            <Image
               src={item.image}
               alt=""
+              width ={250}
+              height={250}
               className="w-full h-full rounded-xl object-cover"/>
             
           </div>

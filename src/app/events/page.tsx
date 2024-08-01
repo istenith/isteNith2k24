@@ -19,10 +19,14 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 my-12 font-head ">HULT PRIZE</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <img
+            <Image
               src="/assets/images/hult/DCS_0814.webp"
               alt=""
+              height={250}
+              width={250}
+            layout='responsive'
               className="w-full h-full object-cover"/>
+              
             </div>
             <div className="text mx-0 md:mx-8 text-white font-desc text-lg md:text-[29px] md:leading-8">
               {`The Hult Prize is an international competition that challenges university students to create innovative solutions for global issues. Founded by Ahmad Ashkar and funded by Bertil Hult, it awards $1 million in seed capital to the winning team to launch a social enterprise. Partnered with Hult International Business School and the United Nations Foundation, it’s called the "Nobel Prize for students" by Nobel laureate Muhammad Yunus.`}
@@ -48,9 +52,12 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 mt-7 md:mt-20 font-head">PRODYOGIKI</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <img
+            <Image
               src="/assets/images/prody/DSC_0268.webp"
               alt=""
+              width={200}
+              height={200}
+                layout='responsive'
               className="w-full h-full object-cover"/>
             </div>
             <div className="text mx-0 md:mx-8 text-white font-desc text:lg md:text-[29px] md:leading-8">
@@ -76,9 +83,13 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 mt-7 md:mt-20 font-head">PAHAL</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <img
+            <Image
               src="/assets/images/pahal/DSC_0498.webp"
+              height={200}
+              width={200}
+                layout='responsive'
               alt="" className="w-full h-full object-cover"/>
+             
             </div>
             <div className="text mx-0 md:mx-8 text-white font-desc text-lg md:text-[29px] md:leading-8">
               Team ISTE at NIT Hamirpur is taking an initiative called PAHAL to support freshers during the admission process. We understand that starting college can be overwhelming, and that is why we are here to help. Our dedicated help desk and in-person guidance will provide you with the assistance and information you need to navigate the admission process smoothly. With PAHAL, we extend a helping hand, ensuring a confident start to your academic journey and making your transition to college life a seamless experience at NIT Hamirpur.
@@ -101,8 +112,11 @@ export default function Event() {
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 mt-7 md:mt-20 font-desc">PRARAMBH</div>
           <div className="flex flex-col md:flex-row">
             <div className="box min-w-full md:min-w-[38rem] mb-6 h-80 bg-white">
-            <img
+            <Image
               src="/assets/images/prarambh/IMG_4054.webp"
+              width={400}
+              height={400}
+                layout='responsive'
               alt=""className="w-full h-full object-cover" / >
             
             </div>
