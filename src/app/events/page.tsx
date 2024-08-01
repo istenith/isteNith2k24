@@ -24,7 +24,7 @@ export default function Event() {
               alt=""
               height={250}
               width={250}
-            layout='responsive'
+            
               className="w-full h-full object-cover"/>
               
             </div>
@@ -46,7 +46,7 @@ export default function Event() {
         </div>
       </div>
 
-      {/* Prody */}
+
       <div>
         <div className="mx-4 md:mx-8">
           <div className="text-2xl md:text-5xl md:mb-4 mb-2 mt-7 md:mt-20 font-head">PRODYOGIKI</div>
@@ -87,7 +87,7 @@ export default function Event() {
               src="/assets/images/pahal/DSC_0498.webp"
               height={200}
               width={200}
-                layout='responsive'
+
               alt="" className="w-full h-full object-cover"/>
              
             </div>
@@ -115,8 +115,8 @@ export default function Event() {
             <Image
               src="/assets/images/prarambh/IMG_4054.webp"
               width={400}
-              height={400}
-                layout='responsive'
+              height={800}
+                layout='fit'
               alt=""className="w-full h-full object-cover" / >
             
             </div>

@@ -78,6 +78,7 @@ const Team = () => {
                   alt={details.name}
                   width={256}
                   height={256}
+
                   className="h-64 w-64 border-4 border-white rounded-lg shadow-md transition-transform transform group-hover:scale-105 hover:shadow-xl  duration-300 mx-auto"
                 />
                 <div className="lg:absolute lg:bottom-2 lg:right-4 absolute bottom-2 right-16 bg-[#1E1E1E] flex text-white opacity-80 group-hover:opacity-100 transition-opacity duration-300">

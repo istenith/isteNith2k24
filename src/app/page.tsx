@@ -97,32 +97,12 @@ return (
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div className="mt-isteimg relative text-white">
   <div className="relative mt-10">
     <Image
       src="/assets/images/util/Copy of DCS_0632 (1).webp"
       alt =""
+      layout='responsive'
       width ={200}
       height={200}
       className="w-full h-auto flex opacity-50 mx-auto object-cover object-center sm:w-isteimg sm:h-isteimg sm:mt-isteimg"

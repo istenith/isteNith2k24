@@ -57,7 +57,7 @@ const Gallery: React.FC = () => {
               src={item.image}
               alt=""
               width ={250}
-              height={250}
+              height={400}
               className="w-full h-full rounded-xl object-cover"/>
             
           </div>

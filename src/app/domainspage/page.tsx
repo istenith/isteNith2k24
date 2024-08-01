@@ -89,9 +89,9 @@ const DomainPage = () => {
       {currentDomain && (
         <div className="mt-8 p-4 rounded-lg text-center">
           <h2 className="text-3xl mb-4">{currentDomain.title}</h2>
-          <p className="text-xl sm:text-2xl text-center">
+          <div className="text-xl sm:text-2xl text-center">
             <WordReveal text={currentDomain.description} animate={animateDescription} key={currentIndex} />
-          </p>
+          </div>
         </div>
       )}
       <div className="absolute left-0 top-svg transform -translate-y-1/2 block lg:hidden">
