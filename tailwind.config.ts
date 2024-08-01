@@ -12,8 +12,7 @@ const config: Config = {
       r2: ['Raleway'],
       f2: ['Barlow', 'sans-serif'],
       actor: ['Actor', 'sans-serif'],
-      'barlow': ['Barlow', 'sans-serif']
-
+      'barlow': ['Barlow', 'sans-serif'],
 
     },
     
