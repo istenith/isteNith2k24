@@ -43,7 +43,7 @@ return (
   <div className="h-screen bg-[#1e1e1e] text-white">
   
 
-  <img src="assets\images\util\iste_logo-01-removebg-preview.webp" className=" -left-1 top-44 relative w-20 h-auto z-50 " alt="ISTE Logo" />
+  <img src="assets\images\util\iste_logo-01-removebg-preview.webp" className=" -left-1 top-44 relative w-20 h-auto z-50 " alt="ISTE Logo" / >
   <span className="text-white text-opacity-60 font-thin ml-nith text-7xl">NITH</span>
 
   <div className="flex flex-col items-center justify-center absolute top-iste left-1/4">
@@ -118,6 +118,7 @@ return (
   <div className="relative mt-10">
     <img
       src="assets\images\util\Copy of DCS_0632 (1).webp"
+      alt =""
       className="w-full h-auto flex opacity-50 mx-auto object-cover object-center sm:w-isteimg sm:h-isteimg sm:mt-isteimg"
     />
     <div className="absolute inset-0 flex items-center justify-center">
@@ -143,7 +144,8 @@ return (
 <div className="relative mt-64 ml-72 h-80 w-auto">
   <div className="relative inset-grey bg-gray-700 opacity-70 z-0 h-96 w-56 right-20 top-20  hidden sm:block "></div> 
   
-  <img src="assets/images/util/aboutuspage.webp" className="relative z-10 h-img2 w-full mt-img2 right-img2 top-6 right-5  hidden sm:block" />
+  <img src="assets/images/util/aboutuspage.webp" 
+  alt ="" className="relative z-10 h-img2 w-full mt-img2 right-img2 top-6 right-5  hidden sm:block" />
 </div>
 </div>
 </div>
