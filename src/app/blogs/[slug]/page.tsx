@@ -38,14 +38,14 @@ export default function Page({ params } :any){
     return (
 
 
-        <div className="min-h-screen  bg-[#1e1e1e]   text-white">
+        <div className="min-h-screen  bg-[#171616]   text-white">
             <div className="flex flex-col lg:flex-row ">
                 <div className="w-full lg:w-1/5 lg:mt-24  lg:-top-10 pt-7 pb-3 z-50 lg:ml-80 lg:fixed text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start    lg:bg-transparent ">
-                    <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-1">B</div>
-                    <div className="from-neutral-400 text-6xl lg:text-9xl font-r2 lg:mb-1">L</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-1">O</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-1">G</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-r2 lg:-ml-4 lg:mb-1">S</div>
+                    <div className="from-neutral-400 text-6xl lg:text-9xl font-barlowb lg:mb-1">B</div>
+                    <div className="from-neutral-400 text-6xl lg:text-9xl font-barlowb lg:mb-1">L</div>
+                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">O</div>
+                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">G</div>
+                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">S</div>
                 </div>
 
                 <div className="w-full  md:w-3/4 md:ml-28 px-4 lg:w-7/12 mt-2 md:mt-4 lg:mt-4 lg:pl-40 lg:ml-116 ">
@@ -58,7 +58,7 @@ export default function Page({ params } :any){
                           {props.fontMatter.description}
                             </div>
                            
-                            <div className="flex lg:flex-row flex-wrap justify-evenly  mt-12">
+                            <div className="flex lg:flex-row flex-wrap justify-evenly font-actor  mt-12">
                                 <div className="bg-custom-graytags-60 lg:text-1.5xl mt-4  p-4 rounded-md">{props.fontMatter.tags[0]}</div>
                                 <div className=" bg-custom-graytags-60 lg:text-1.5xl p-4 ml-4 mt-4 rounded-md">{props.fontMatter.tags[1]}</div>
                                 <div className="bg-custom-graytags-60 lg:text-1.5xl p-4 ml-4 mt-4 rounded-md">{props.fontMatter.tags[2]}</div>
@@ -69,7 +69,7 @@ export default function Page({ params } :any){
                         </div>
                         <div className='flex flex-row ml-auto sm:ml-auto '>
                         <div className="border-t-2 w-4  border-white mt-6"></div>
-                        <div className='mt-4 mb-4 mx-2'>{props.fontMatter.author}</div>
+                        <div className='mt-4 mb-4 mx-2 font-actor'>{props.fontMatter.author}</div>
                         </div>
                         
                       

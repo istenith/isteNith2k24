@@ -63,7 +63,7 @@ const DomainPage = () => {
 
   return (
     <div className="min-h-screen bg-1e1e1e mt-domainpage text-white flex flex-col items-center justify-center p-4 relative">
-      <h1 className="text-4xl mb-8 font-barlow py-10 sm:text-7xl text-center">DOMAINS</h1>
+      <h1 className="text-4xl mb-8 font-barlowmedium py-10 lg:text-[88px] text-center">DOMAINS</h1>
       <div className="w-full">
         <div {...handlers} className="flex h-full space-x-7 overflow-x-auto sm:flex-wrap sm:justify-center lg:flex-nowrap hide-scrollbar swipeable-view">
           {domains.map((domain, index) => (
@@ -88,9 +88,9 @@ const DomainPage = () => {
       </div>
       {currentDomain && (
         <div className="mt-8 p-4 rounded-lg text-center">
-          <h2 className="text-3xl mb-4">{currentDomain.title}</h2>
-          <div className="text-xl sm:text-2xl text-center">
-            <WordReveal text={currentDomain.description} animate={animateDescription} key={currentIndex} />
+          <h2 className="text-3xl lg:[36px] mb-4 font-actor">{currentDomain.title}</h2>
+          <div className="text-2xl  text-center font-actor ">
+            <WordReveal text={currentDomain.description} animate={animateDescription} key={currentIndex}  />
           </div>
         </div>
       )}

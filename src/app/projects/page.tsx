@@ -64,7 +64,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="lg:text-[167px] md:text-8xl text-5xl mt-7 mx-12 md:mt-16 font-light text-white lg:mx-20 lg:px-2 lg:mt-20">
+      <div className="lg:text-[167px] md:text-8xl text-5xl mt-7 mx-12 md:mt-16 font-barlowb text-white lg:mx-20 lg:px-2 lg:mt-20">
         PROJECTS
       </div>
       <div className="border-t-2 border-gray-200 md:mx-20 lg:mx-24 mx-4 lg:mt-0"></div>
@@ -120,6 +120,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
+        <div className='h-28'></div>
       </div>
     </>
   );

@@ -21,12 +21,12 @@ const Gallery: React.FC = () => {
   const gridcss = "sm:h-16 h-9 w-[28%] text-md sm:text-4xl rounded-full hover:cursor-pointer font-head justify-center items-center flex";
 
   return (
-    <div className="bg-[#1E1E1E] text-white min-h-screen">
-      <div className="text-desc sm:text-9xl text-5xl font-extralight mx-24 mt-11 mb-11">
+    <div className="bg-[#171616 text-white min-h-screen">
+      <div className="text-desc sm:text-9xl text-5xl font-barlowb mx-24 mt-11 mb-11">
         GALLERY
       </div>
      
-      <div className="flex gap-3 sm:mx-24 mx-6">
+      <div className="flex gap-3 sm:mx-24 font-actor mx-6">
         <div onClick={() => setProperty('pahal')} className={`${gridcss} ${property === 'pahal' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>pahal</div>
         <div onClick={() => setProperty('hult')} className={`${gridcss} ${property === 'hult' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>hult prize</div>
         <div onClick={() => setProperty('prody')} className={`${gridcss} ${property === 'prody' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>prodyogiki</div>
@@ -63,6 +63,7 @@ const Gallery: React.FC = () => {
           </div>
         ))}
       </div>
+      <div className='h-28 lg:h-0'></div>
     </div>
   );
 };

@@ -56,9 +56,9 @@ const Team = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1E1E1E] text-white">
-      <div className="bg-[#1E1E1E] lg:w-full lg:fixed top-0 z-50">
-        <div className="lg:ml-16 ml-0 mx-auto lg:px-0 pt-7 text-4xl md:text-6xl font-f2 text-center lg:text-start">ISTE NITH</div>
+    <div className="min-h-screen bg-[#171616]  text-white">
+      <div className="bg-[#171616] lg:w-full lg:fixed top-0 z-50">
+        <div className="lg:ml-16 ml-0 mx-auto lg:px-0 pt-7 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
         <div className="border-t-2 border-white mx-auto mt-0 lg:my-0 w-10/12 lg:w-11/12"></div>
       </div>
 
@@ -95,16 +95,16 @@ const Team = () => {
                 </div>
               </div>
               <div className="flex flex-col mb-0 h-44 pt-2 bg-opacity-70 px-16 lg:px-3 rounded-b-lg lg:text-start text-center">
-                <motion.div className="text-lg md:text-xl font-actor text-white">
+                <motion.div className="lg:text-[12xl]  font-namelight text-[#D4CCCC]">
                   {details.name}
                 </motion.div>
-                <motion.p className="text-lg font-actor font-semibold">
+                <motion.p className="text-[13xl] font-fontsemi  text-[#D4CCCC]">
                   {details.post}
                 </motion.p>
-                <motion.p className="text-lg text-white font-actor">
+                <motion.p className="text-[12xl] text-[#D4CCCC] font-namelight">
                   {details.branch}
                 </motion.p>
-                <motion.p className="text-lg text-white font-actor">
+                <motion.p className="text-[12xl] text-[#D4CCCC] font-namelight">
                   {details.location}
                 </motion.p>
               </div>
@@ -121,23 +121,23 @@ const Team = () => {
           <div className="flex flex-col items-center lg:items-start w-full mt-0 mb-8 lg:mt-80">
             <div className="sm:border-t-2 sm:border-white sm:w-3/4 lg:w-full mx-auto mb-4"></div>
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:gap-0 lg:-ml-8 sm:ml-0">
-              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform font-actor hover:scale-105">
                 <button onClick={() => setYear('final')} className="w-full ">FINAL YEAR</button>
               </div>
-              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
                 <button onClick={() => setYear('Third')} className="w-full ">THIRD YEAR</button>
               </div>
-              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:ml-8 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:ml-8 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
                 <button onClick={() => setYear('second')} className="w-full ">SECOND YEAR</button>
               </div>
-              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
                 <button onClick={() => setYear('first')} className="w-full ">FIRST YEAR</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-     
+
     </div>
   );
 };

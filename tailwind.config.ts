@@ -11,10 +11,17 @@ const config: Config = {
       r1: ['Encode Sans Expanded'],
       r2: ['Raleway'],
       f2: ['Barlow', 'sans-serif'],
-      actor: ['Actor', 'sans-serif'],
-      'barlow': ['Barlow', 'sans-serif'],
 
+
+      actor :['actor','sans-serif'],
+      barlowb: ['barlow', 'sans-serif'],
+      barlowlight : ['barlowlight', 'sans-serif'],
+      barlowmedium : ['barlowmedium', 'sans-serif'],
+      fontsemi : ['fontsemi','sans-serif'],
+      namelight : ['namelight','sans-serif'],
     },
+
+
     
     extend: {
       height: {
@@ -78,9 +85,6 @@ const config: Config = {
           '1.3xl': '1.3rem', 
 
 
-      },
-      fontFamily: {
-        raleway: ['Raleway', 'sans-serif'],
       },
  
     },

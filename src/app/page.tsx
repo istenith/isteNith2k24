@@ -41,19 +41,19 @@ return (
 
 
 
-  <div className="h-screen bg-[#1e1e1e] text-white">
+  <div className="h-screen bg-[#171616] text-white">
   
 
   <Image src="/assets/images/util/iste_logo-01-removebg-preview.webp" 
   height={200}
   width ={200}
-  className=" -left-1 top-44 relative w-20 h-auto z-50 " alt="ISTE Logo" / >
-  <span className="text-white text-opacity-60 font-thin ml-nith text-7xl">NITH</span>
+  className=" -left-1 logo-44 relative w-20 h-auto z-50 text-white/70" alt="ISTE Logo" / >
+  <span className="text-[#ffffff] font-actor ml-nith text-7xl">NITH</span>
 
   <div className="flex flex-col items-center justify-center absolute top-iste left-1/4">
-    <h1 className="text-iste font-extralight ml-iste -mt-60 :text-4xl">ISTE</h1>
-    <h1 className="text-white text-opacity-50 font-extralight text-iste ml-iste -mt-iste2 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
-    <h1 className="text-white text-opacity-20 font-extralight text-iste ml-iste -mt-iste3" style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
+    <h1 className="text-iste font-barlowlight ml-iste -mt-60 :text-4xl">ISTE</h1>
+    <h1 className="text-white/30  font-barlowlight text-iste ml-iste -mt-iste2 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
+    <h1 className="text-white/10  font-barlowlight text-iste ml-iste -mt-iste3" style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
   </div>
   <div className="relative">
   
@@ -72,16 +72,16 @@ return (
         </svg>
       </button>
       {menu && (
-        <div className="fixed inset-0 bg-nav bg-opacity-100 z-0" onClick={() => setmenu(false)}></div>
+        <div className="fixed inset-0 bg-[#171616] z-0" onClick={() => setmenu(false)}></div>
       )}
 
 
   <nav className={`absolute top-44 right-0 pr-20 text-white  md: md:flex md:space-y4 ${menu? 'block bg-1e1e1e p-4' : 'hidden'}`}>
     <ul className="flex flex-col md:space-y-8 md:flex md:items-center">
       {pagenames.map((item) => (
-        <li key={item.name} className="relative group text-4xl flex items-center ">
+        <li key={item.name} className="relative group text-3xl flex items-center ">
           <Link href={item.href}>
-            <div className="text-white opacity-70  hover:opacity-100 transition-transform duration-300 group-hover:-translate-y-1.5 mr-4 cursor-pointer">
+            <div className="text-white/60 font-actor hover:text-white transition-transform duration-300 group-hover:-translate-y-1.5 mr-4 cursor-pointer">
               {item.name}
             </div>
           </Link>
@@ -108,7 +108,7 @@ return (
       className="w-full h-auto flex opacity-50 mx-auto object-cover object-center sm:w-isteimg sm:h-isteimg sm:mt-isteimg"
     />
     <div className="absolute inset-0 flex items-center justify-center">
-      <div className="absolute text-3xl font-barlow ml-about mt-about z-10 lg:text-6xl ">
+      <div className="absolute text-3xl font-barlowmedium ml-about mt-about z-10  lg:text-[108px] ">
         ABOUT US
       </div>
       
@@ -117,7 +117,7 @@ return (
 
   <div className="flex flex-col items-center justify-center min-h-screen">
     <div className="relative max-w-2xl mx-auto bg-aboutus opacity-100 p-4 rounded-lg shadow-lg mt-4 ml-4 sm:mt-aboutcontent sm:ml-aboutcontent sm:w-full sm:left-1/2">
-      <p className="text-xl text-white opacity-100 text-center sm:text-3xl sm:text-left md:text-2xl lg:text-3xl">
+      <p className="text-xl text-white opacity-100 font-actor text-center sm:text-2xl sm:text-left md:text-2xl lg:text-3xl">
         The Indian Society for Technical Education (ISTE) is the leading
         National Professional non-profit making Society for the Technical
         Education System in our country. The Students Chapter NIT Hamirpur is
@@ -160,35 +160,12 @@ return (
 
 
 
-      <div className="flex flex-col items-center justify-center min-h-screen bg-1616 text-white mt-28">
-      <h1 className=" text-5xl sm:text-12xl font-barlow  mb-8">CONTACT</h1>
-      <p className="text-1xl sm:text-4xl  text-white opacity-70 mb-16  p-7 text-center font-sans">
+      <div className="flex flex-col items-center justify-center min-h-screen  text-white mt-0">
+      <h1 className=" text-5xl lg:text-[170px] font-barlowmedium mb-12">CONTACT</h1>
+      <p className=" lg:text-[32px] text-2xl px-12 lg:px-60  text-[#FFFFFF]  mb-60 text-center font-actor">
         Have a question or need assistance? Our team is always ready to help.
         Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>
-      <div className="contact-details flex flex-col sm:flex-row mt-cnt ">
-        <div className="flex items-center space-x-4">
-          <FaMapLocationDot className="size-16 mb-contactbottom  ml-16 sm:ml-36" />
-          <div>
-            <p className="text-sm">Address</p>
-            <p className="text-lg">NIT, Hamirpur<br />Himachal Pradesh, India, 177001</p>
-          </div>
-        </div>
-        <div className="flex items-center space-x-4">
-          <BiSolidContact className="size-16 mb-contactbottom ml-16 sm:ml-36" />
-          <div>
-            <p className="text-sm">Phone</p>
-            <p className="text-lg">12345578</p>
-          </div>
-        </div>
-        <div className="flex items-center space-x-4">
-          <HiOutlineMailOpen className="size-16 mb-contactbottom ml-16 sm:ml-36" />
-          <div>
-            <p className="text-sm mr-5" >Email</p>
-            <p className="text-lg mr-5">iste@nith.ac.in</p>
-          </div>
-        </div>
-      </div>
     </div>
  </div> 
 );};
