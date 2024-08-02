@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../globals.css";
 import { motion } from "framer-motion";
-import Navbar from "../../components/navbar"
+import Navbar from "../../components/navbar";
+import Footer from '../../components/footer';
 
 // Custom arrows for the slider
 const CustomPrevArrow: React.FC<any> = (props) => (
@@ -122,8 +123,9 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <div className='h-28'></div>
+        <div className='lg:h-28 h-0 '></div>
       </div>
+      <Footer/>
     </>
   );
 };

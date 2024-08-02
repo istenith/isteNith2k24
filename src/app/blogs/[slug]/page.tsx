@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import OverflowDropdown from "../../../components/OverflowDropdown"
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Navbar from  "../../../components/navbar"
+import Footer from "../../../components/footer";
 export async function generateStaticParams(){
 
     const files =fs.readdirSync(path.join('src/blogs'))
@@ -76,6 +77,7 @@ export default function Page({ params } :any){
                 </div>
             </div>
         </div>
+        <Footer/>
 </>
 
    
