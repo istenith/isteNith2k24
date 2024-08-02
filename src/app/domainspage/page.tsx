@@ -1,41 +1,40 @@
-"use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing arrow icons
+import { CgArrowLongLeft, CgArrowLongRight, } from 'react-icons/cg';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import WordReveal from '@/components/animations/WordReveal';
 
 const DomainPage = () => {
-  const [domain, setDomain] = useState<{ title: string; description: string; image: string; rotation: string; } | null>(null);
+  const [domain, setDomain] = useState<{ title: React.ReactNode; description: string; image: string; rotation: string; } | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateDescription, setAnimateDescription] = useState(false); // State for animation
 
   const domains = [
     {
-      title: '<---      Design      --->',
+      title: <><CgArrowLongLeft className="inline" /> Design <CgArrowLongRight className="inline" /></>,
       description: "The design team is the creative force to elevate society's visual, artistic, and aesthetic aspects. The Design team works to develop imaginatively captivating posters, graphics, and event branding.",
       image: 'https://i.pinimg.com/564x/df/ab/86/dfab862519becd6970a10c1369efdcf3.jpg',
       rotation: 'rotate-12'
     },
     {
-      title: '<---      Finance     --->',
+      title: <><CgArrowLongLeft className="inline" /> Finance <CgArrowLongRight className="inline" /></>,
       description: "The management of ISTE's financial activities falls within the purview of the Finance domain. It oversees activities such as accounting, financial reporting, and budgeting.",
       image: 'https://i.pinimg.com/564x/68/7c/69/687c6904b364e3c8bf539b7d15a581d4.jpg',
       rotation: 'rotate-1'
     },
     {
-      title: '<---     PR     --->',
+      title: <><CgArrowLongLeft className="inline" /> PR <CgArrowLongRight className="inline" /></>,
       description: 'The Public Relations domain of ISTE is committed to providing the best possible communication with its members, institutions, and the public.',
       image: 'https://i.pinimg.com/564x/7a/cc/85/7acc8503086b3a2d7448b8be7058292d.jpg',
       rotation: '-rotate-6'
     },
     {
-      title: ' <---     TECH    --->',
+      title: <><CgArrowLongLeft className="inline" /> TECH <CgArrowLongRight className="inline" /></>,
       description: "Welcome to ISTE's Tech Domain! Serving as the organization's technological backbone, the Tech domain is responsible for delivering essential technical resources and support.",
       image: 'https://i.pinimg.com/564x/96/6f/21/966f212c46f1d4831b82ed2698ce7953.jpg',
       rotation: '-rotate-12'
     }
   ];
-
   const handlers = useSwipeable({
     onSwipedLeft: () => handleSwipe('left'),
     onSwipedRight: () => handleSwipe('right'),
@@ -54,16 +53,23 @@ const DomainPage = () => {
     setDomain(domain);
     setCurrentIndex(index);
 
-    // Reset and start the animation
+   
     setAnimateDescription(false);
     setTimeout(() => setAnimateDescription(true), 0);
   };
+
+  useEffect(() => {
+   
+    setDomain(domains[currentIndex]);
+    setAnimateDescription(false);
+    setTimeout(() => setAnimateDescription(true), 0);
+  }, [currentIndex]);
 
   const currentDomain = domains[currentIndex];
 
   return (
     <div className="min-h-screen bg-1e1e1e mt-domainpage text-white flex flex-col items-center justify-center p-4 relative">
-      <h1 className="text-4xl mb-8 font-barlow py-10 sm:text-7xl text-center">DOMAINS</h1>
+      <h1 className="text-4xl mb-8 font-barlowmedium py-16 lg:text-[88px] text-center">DOMAINS</h1>
       <div className="w-full">
         <div {...handlers} className="flex h-full space-x-7 overflow-x-auto sm:flex-wrap sm:justify-center lg:flex-nowrap hide-scrollbar swipeable-view">
           {domains.map((domain, index) => (
@@ -88,9 +94,9 @@ const DomainPage = () => {
       </div>
       {currentDomain && (
         <div className="mt-8 p-4 rounded-lg text-center">
-          <h2 className="text-3xl mb-4">{currentDomain.title}</h2>
-          <div className="text-xl sm:text-2xl text-center">
-            <WordReveal text={currentDomain.description} animate={animateDescription} key={currentIndex} />
+          <h2 className="text-3xl lg:[36px] mb-4 font-actor">{currentDomain.title}</h2>
+          <div className="text-2xl  text-center font-actor ">
+            <WordReveal text={currentDomain.description} animate={animateDescription} key={currentIndex}  />
           </div>
         </div>
       )}
