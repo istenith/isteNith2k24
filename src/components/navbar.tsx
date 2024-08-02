@@ -36,37 +36,37 @@ const Navbar = () => {
                 </div>
             )}
             <nav
-                className={`${menu ? 'block p-4' : 'hidden'} flex justify-center -mt-12 items-center`}
+                className={`${menu ? 'block p-4' : 'hidden'} flex justify-center inset-20 -mt-12 items-center`}
             >
-                <ul className="w-[60%] sm:bg-[#626262] bg-opacity-[32%] text-white sm:flex text-4xl sm:text-sm md:text-lg font-fontsemi md:p-4 md:px-7 sm:p-2 mx-10 sm:mt-8 md:mt-14 mt-8 font-light items-center justify-between sm:border-2 rounded-full">
+                <ul className="lg:w-[60%]  w-full grid gap-2 lg:gap-0 grid-cols-2 lg:bg-[#626262] bg-opacity-[32%] text-white sm:flex text-1.2xl lg:text-xl font-fontsemi md:p-4 md:px-7 sm:p-2 mr-4 sm:mt-12 md:mt-14 mt-28  items-center justify-between sm:border-2 rounded-0 lg:rounded-full">
                     <li>
                         <Link href="/">
-                            <div className={smcss}>HOME</div>
+                            <div className='lg:border-hidden rounded-lg border px-8 lg:px-0 cursor-pointer transition-transform  transform hover:scale-105 ' >HOME</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/members">
-                            <div className={smcss}>MEMBERS</div>
+                            <div className="lg:border-hidden  rounded-lg border  lg:px-0 px-8  cursor-pointer transition-transform  transform hover:scale-105 ">MEMBERS</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/events">
-                            <div className={smcss}>EVENTS</div>
+                            <div className=" lg:border-hidden   rounded-lg border lg:px-0 px-8 cursor-pointer transition-transform  transform hover:scale-105 ">EVENTS</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/gallery">
-                            <div className={smcss}>GALLERY</div>
+                            <div className=" lg:border-hidden  rounded-lg border lg:px-0 px-8  cursor-pointer transition-transform  transform hover:scale-105 ">GALLERY</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/blogs">
-                            <div className={smcss}>BLOGS</div>
+                            <div className=" lg:border-hidden  rounded-lg  border lg:px-0 px-8 cursor-pointer transition-transform  transform hover:scale-105  ">BLOGS</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/projects">
-                            <div className={smcss}>PROJECTS</div>
+                            <div className="lg:border-hidden  rounded-lg border lg:px-0 px-8 cursor-pointer transition-transform  transform hover:scale-105  ">PROJECTS</div>
                         </Link>
                     </li>
                 </ul>
