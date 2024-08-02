@@ -3,8 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import OverflowDropdown from "../../../components/OverflowDropdown"
 import { MDXRemote } from 'next-mdx-remote/rsc'
-
-
+import Navbar from  "../../../components/navbar"
 export async function generateStaticParams(){
 
     const files =fs.readdirSync(path.join('src/blogs'))
@@ -30,17 +29,16 @@ function getPost({slug}: {slug: string}){
 
 }
 
-
 export default function Page({ params } :any){
     const props = getPost( params);
 
 
     return (
-
-
-        <div className="min-h-screen  bg-[#171616]   text-white">
+<>
+<Navbar/>
+<div className="min-h-screen  bg-[#171616]   text-white">
             <div className="flex flex-col lg:flex-row ">
-                <div className="w-full lg:w-1/5 lg:mt-24  lg:-top-10 pt-7 pb-3 z-50 lg:ml-80 lg:fixed text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start    lg:bg-transparent ">
+                <div className="w-full lg:w-1/5 lg:mt-8  lg:-top-10 pt-7 pb-3 z-50 lg:ml-80  text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start    lg:bg-transparent ">
                     <div className="from-neutral-400 text-6xl lg:text-9xl font-barlowb lg:mb-1">B</div>
                     <div className="from-neutral-400 text-6xl lg:text-9xl font-barlowb lg:mb-1">L</div>
                     <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">O</div>
@@ -48,7 +46,7 @@ export default function Page({ params } :any){
                     <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">S</div>
                 </div>
 
-                <div className="w-full  md:w-3/4 md:ml-28 px-4 lg:w-7/12 mt-2 md:mt-4 lg:mt-4 lg:pl-40 lg:ml-116 ">
+                <div className="w-full  md:w-3/4 md:ml-28 px-4 lg:w-7/12 mt-2 md:mt-4 lg:mt-4 lg:pl-40 lg:-ml-40 ">
 
                     <div className="flex flex-col mt-4 lg:mt-16 ">
                         <div className="border-t-2 border-white"></div>
@@ -78,6 +76,9 @@ export default function Page({ params } :any){
                 </div>
             </div>
         </div>
+</>
+
+   
     );
 
 }

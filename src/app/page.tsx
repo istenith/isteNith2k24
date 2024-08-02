@@ -162,7 +162,7 @@ return (
 
       <div className="flex flex-col items-center justify-center min-h-screen  text-white mt-0">
       <h1 className=" text-5xl lg:text-[170px] font-barlowmedium mb-12">CONTACT</h1>
-      <p className=" lg:text-[32px] text-2xl px-12 lg:px-60  text-[#FFFFFF]  mb-60 text-center font-actor">
+      <p className=" lg:text-[32px] text-2xl px-12 lg:px-60  text-[#FFFFFF]  mb-80 text-center font-actor">
         Have a question or need assistance? Our team is always ready to help.
         Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>

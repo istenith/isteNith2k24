@@ -6,6 +6,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Navbar from '../../components/navbar';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/',
@@ -56,13 +57,15 @@ const Team = () => {
   };
 
   return (
+  <>
+
     <div className="min-h-screen bg-[#171616]  text-white">
       <div className="bg-[#171616] lg:w-full lg:fixed top-0 z-50">
         <div className="lg:ml-16 ml-0 mx-auto lg:px-0 pt-7 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
         <div className="border-t-2 border-white mx-auto mt-0 lg:my-0 w-10/12 lg:w-11/12"></div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row mt-16 pt-24 lg:pt-16 ">
+      <div className="flex flex-col-reverse lg:flex-row mt-16 pt-16  ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 w-full md:w-full lg:w-9/12 lg:mx-12">
           {filteredProfiles.map((details, index) => (
             <motion.div
@@ -139,6 +142,7 @@ const Team = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
@@ -150,3 +154,4 @@ const TeamWithApollo = () => (
 
 
 export default TeamWithApollo;
+

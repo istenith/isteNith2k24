@@ -23,13 +23,15 @@ const Footer: React.FC = () => {
       </div>
     </div>
     <div className="lg:mr-20 flex lg:flex-row mt-7 mx-20 items-center">
-      <HiOutlineMailOpen className=" size-16 lg:size-24 " />
-      <div className='lg:ml-8 ml-12 '>
+      <HiOutlineMailOpen className=" size-20 lg:size-24 " />
+      <div className='lg:ml-8 ml-8 '>
         <p className="text-1.2xl font-barlow " >Email</p>
         <p className="text-1.2xl font-barlow ">iste@nith.ac.in</p>
       </div>
     </div>
+
   </div>
+  
   </footer>
   );
 };

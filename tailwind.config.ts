@@ -7,12 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
-      r1: ['Encode Sans Expanded'],
-      r2: ['Raleway'],
-      f2: ['Barlow', 'sans-serif'],
-
-
+    fontFamily: {
       actor :['actor','sans-serif'],
       barlowb: ['barlow', 'sans-serif'],
       barlowlight : ['barlowlight', 'sans-serif'],
@@ -25,7 +20,8 @@ const config: Config = {
     
     extend: {
       height: {
-        '155': '155px', // Add your custom height
+        '155': '155px', 
+        // Add your custom height
       },
       colors: {
         'custom-black': "#252525",
@@ -86,6 +82,7 @@ const config: Config = {
 
 
       },
+      
  
     },
   },

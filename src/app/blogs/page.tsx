@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FaArrowRight } from 'react-icons/fa';
+import Navbar from "../../components/navbar"
 export default function Home() {
   const blogDir = 'src/blogs/';
 
@@ -20,13 +21,16 @@ export default function Home() {
   });
 
   return (
+
+   <>
+   <Navbar/>
     <div className="min-h-screen bg-[#171616]">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full z-50 lg:w-1/5 lg:mt-7 lg:ml-80 lg:fixed flex flex-row justify-center lg:flex-col pt-8 lg:pt-0 lg:justify-start lg:bg-transparent">
-          <div className="text-6xl lg:text-141px font-barlowb text-white-48 mb-1">B</div>
-          <div className="text-6xl lg:text-141px font-barlowb text-white-48 mb-1">L</div>
-          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-1">O</div>
-          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-1">G</div>
+        <div className="w-full z-50 lg:w-1/5 lg:mt-7 lg:ml-80  flex flex-row justify-center lg:flex-col pt-8 lg:pt-3 lg:justify-start lg:bg-transparent">
+          <div className="text-6xl lg:text-141px font-barlowb text-white-48 mb-0">B</div>
+          <div className="text-6xl lg:text-141px font-barlowb text-white-48 mb-0">L</div>
+          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">O</div>
+          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">G</div>
           <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">S</div>
         </div>
 
@@ -72,6 +76,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
