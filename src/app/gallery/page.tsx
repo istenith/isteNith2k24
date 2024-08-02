@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
 import Navbar from "../../components/navbar"
+import Footer from '../../components/footer';
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/', 
   cache: new InMemoryCache(),
@@ -89,6 +90,7 @@ const Gallery: React.FC = () => {
       </div>
       <div className='h-40 lg:h-0'></div>
     </div>
+    <Footer/>
    </>
     
   );
