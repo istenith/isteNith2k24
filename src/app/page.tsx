@@ -160,13 +160,44 @@ return (
 
 
 
-      <div className="flex flex-col items-center justify-center min-h-screen  text-white mt-0">
+  
+<div className="flex flex-col items-center justify-center min-h-screen  text-white ">
       <h1 className=" text-5xl lg:text-[170px] font-barlowmedium mb-12">CONTACT</h1>
-      <p className=" lg:text-[32px] text-2xl px-12 lg:px-60  text-[#FFFFFF]  mb-60 text-center font-actor">
+      <p className=" lg:text-[32px] text-2xl px-12   text-[#FFFFFF]   text-center font-actor">
         Have a question or need assistance? Our team is always ready to help.
         Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>
+      
+      <footer className='lg:mb-0 mb-16 lg:mt-20 text-white z-50'>
+    <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-16 ">
+    <div className=" flex lg:flex-row  mx-20 lg:ml-20 items-center">
+      <FaMapLocationDot className=" size-20 lg:size-24  " />
+      <div className='lg:ml-8 ml-8'>
+        <p className="text-1.2xl font-barlow">Address</p>
+        <p className="text-1.2xl font-barlow">NIT, Hamirpur<br />Himachal Pradesh,<br/> India, 177001</p>
+      </div>
     </div>
+    <div className=" flex lg:flex-row  mx-20 mt-7 items-center ">
+      <BiSolidContact className=" size-16 lg:size-24  " />
+      <div className=' ml-12 lg:ml-4'>
+        <p className="text-1.2xl font-barlow">Phone</p>
+        <p className="text-1.2xl font-actor">12345578</p>
+      </div>
+    </div>
+    <div className="lg:mr-20 flex lg:flex-row mt-7 mx-20 items-center">
+      <HiOutlineMailOpen className=" size-20 lg:size-24 " />
+      <div className='lg:ml-8 ml-8 '>
+        <p className="text-1.2xl font-barlow " >Email</p>
+        <p className="text-1.2xl font-barlow ">iste@nith.ac.in</p>
+      </div>
+    </div>
+
+  </div>
+  
+  </footer>
+  
+</div>
+
  </div> 
 );};
 

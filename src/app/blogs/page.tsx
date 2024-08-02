@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FaArrowRight } from 'react-icons/fa';
+import Navbar from "../../components/navbar"
 export default function Home() {
   const blogDir = 'src/blogs/';
 
@@ -20,14 +21,17 @@ export default function Home() {
   });
 
   return (
-    <div className="min-h-screen bg-[#1E1E1E]">
+
+   <>
+   <Navbar/>
+    <div className="min-h-screen bg-[#171616]">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full z-50 lg:w-1/5 lg:mt-12 lg:ml-80 lg:fixed flex flex-row justify-center lg:flex-col pt-8 lg:pt-0 lg:justify-start lg:bg-transparent">
-          <div className="text-6xl lg:text-141px barlow-semi-condensed-regular  text-white-48 mb-2">B</div>
-          <div className="text-6xl lg:text-141px barlow-semi-condensed-regular  text-white-48 mb-2">L</div>
-          <div className="text-white-48 barlow-semi-condensed-regular  lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-2">O</div>
-          <div className="text-white-48 barlow-semi-condensed-regular  lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-2">G</div>
-          <div className="text-white-48 barlow-semi-condensed-regular  lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">S</div>
+        <div className="w-full z-50 lg:w-1/5 lg:mt-7 lg:ml-80  flex flex-row justify-center lg:flex-col pt-8 lg:pt-3 lg:justify-start lg:bg-transparent">
+          <div className="text-6xl lg:text-141px font-barlowb text-white-48 mb-0">B</div>
+          <div className="text-6xl lg:text-141px font-barlowb text-white-48 mb-0">L</div>
+          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">O</div>
+          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">G</div>
+          <div className="text-white-48 font-barlowb lg:-ml-4 text-6xl lg:text-141px -ml-1 mb-0">S</div>
         </div>
 
         <div className="md:w-11/12 mx-7 md:px-16 lg:px-8 lg:w-6/12 mt-0 lg:mt-4 lg:p-4 lg:ml-auto lg:mr-28 lg:pr-16">
@@ -42,7 +46,7 @@ export default function Home() {
               style={{ animationDelay: `${index * 0.3}s` }}
             >
               <div className="border-t-2 border-white-60"></div>
-              <div className="mt-4 md:text-4xl text-2xl lg:text-4xl font-r2 text-white-60 group-hover:text-slate-50 hover:cursor-pointer lg:px-1 transition-colors duration-300 cursor-pointer">
+              <div className="mt-4 md:text-4xl text-2xl lg:text-[33xl] font-actor text-white-60 group-hover:text-slate-50 hover:cursor-pointer lg:px-1 transition-colors duration-300 cursor-pointer">
                 <Link href={'/blogs/' + blog.slug}>
                   {blog.meta.title}
                 </Link>
@@ -50,7 +54,7 @@ export default function Home() {
               <div className="text-lg mt-8 lg:mt-12"></div>
               <div className="flex flex-row mt-8 lg:mt-12 absolute -bottom-8 lg:-bottom-12 right-0 lg:ml-96">
                 <div className="border-t-2 border-white-60 w-4 mt-2"></div>
-                <div className="ml-2 -mt-1 text-2xl my-2 text-white-60 font-r2">{blog.meta.author}</div>
+                <div className="ml-2 -mt-1 text-2xl my-2 text-white-60 font-actor">{blog.meta.author}</div>
               </div>
 
               {/* Hover Effect */}
@@ -72,6 +76,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
