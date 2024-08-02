@@ -58,7 +58,7 @@ const Team = () => {
 
   return (
   <>
-
+<Navbar/>
     <div className="min-h-screen bg-[#171616]  text-white">
       <div className="bg-[#171616] lg:w-full top-0 z-50">
         <div className="lg:ml-16  mx-auto lg:px-0 pt-5 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
