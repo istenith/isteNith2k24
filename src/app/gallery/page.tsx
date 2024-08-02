@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
-
+import Navbar from "../../components/navbar"
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/', 
   cache: new InMemoryCache(),
@@ -43,7 +43,9 @@ const Gallery: React.FC = () => {
   const gridcss = "sm:h-16 h-9 w-[28%] text-sm sm:text-3xl rounded-full transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer font-actor justify-center items-center flex";
 
   return (
-    <div style={{ backgroundColor: '#171616' }} className="text-white min-h-screen">
+   <>
+   <Navbar/>
+   <div style={{ backgroundColor: '#171616' }} className="text-white min-h-screen">
       <div className="font-barlowb sm:text-9xl flex justify-center items-center md:flex-none md:justify-start md:items-start h-[155px] text-5xl mx-24  lg:mt-11 lg:mb-6 -mb-6">
         GALLERY
       </div>
@@ -87,6 +89,7 @@ const Gallery: React.FC = () => {
       </div>
       <div className='h-40 lg:h-0'></div>
     </div>
+   </>
     
   );
 };
