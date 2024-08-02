@@ -159,17 +159,17 @@ return (
 
 
 
-      <div className="flex flex-col items-center justify-center min-h-screen  text-white mt-0">
+      <div className="flex flex-col items-center justify-center min-h-screen  text-white  -mt-16 lg:mt-0">
       <h1 className=" text-5xl lg:text-[170px] font-barlowmedium mb-12">CONTACT</h1>
-      <p className=" lg:text-[32px] text-2xl px-12 lg:px-32  text-[#FFFFFF]  mb-116 text-center font-actor">
+      <p className=" lg:text-[32px] text-2xl px-12 lg:px-32  text-[#FFFFFF]  mb-0 lg:mb-116 text-center font-actor">
         Have a question or need assistance? Our team is always ready to help.
         Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>
 
     </div>
 
-    <footer className='lg:mb-4  lg:-mt-40 mt-40 text-white z-50'>
-    <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-16 ">
+    <footer className='  lg:-mt-40 -mt-20 text-white z-50'>
+    <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-0 ">
     <div className=" flex lg:flex-row  mx-12 lg:ml-20 items-center">
       <FaMapLocationDot className=" size-20 lg:size-24  " />
       <div className='lg:ml-8 ml-8'>
