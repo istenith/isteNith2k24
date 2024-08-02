@@ -12,6 +12,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    
     "plugins": [
       {
         "name": "next"
@@ -27,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/members/page.jsx",
-    "global.d.ts"
-, "src/app/projects/page.tsx", "src/app/gallery/page.jsx"  ],
+    "src/app/gallery/page.tsx",
+    "global.d.ts" ,
+    ],
   "exclude": ["node_modules"]
 }

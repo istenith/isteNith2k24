@@ -6,6 +6,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Navbar from '../../components/navbar';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/',
@@ -56,18 +57,20 @@ const Team = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1E1E1E] text-white">
-      <div className="bg-[#1E1E1E] lg:w-full lg:fixed top-0 z-50">
-        <div className="lg:ml-16 ml-0 mx-auto lg:px-0 pt-7 text-4xl md:text-6xl font-f2 text-center lg:text-start">ISTE NITH</div>
+  <>
+
+    <div className="min-h-screen bg-[#171616]  text-white">
+      <div className="bg-[#171616] lg:w-full lg:fixed top-0 z-50">
+        <div className="lg:ml-16 ml-0 mx-auto lg:px-0 pt-7 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
         <div className="border-t-2 border-white mx-auto mt-0 lg:my-0 w-10/12 lg:w-11/12"></div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row mt-16 pt-24 lg:pt-16 ">
+      <div className="flex flex-col-reverse lg:flex-row mt-16 pt-16  ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 w-full md:w-full lg:w-9/12 lg:mx-12">
           {filteredProfiles.map((details, index) => (
             <motion.div
               className="w-full mb-6 md:mb-8 lg:mb-0"
-              key={index}
+              key={`${initialYear}-${index}`}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -78,6 +81,7 @@ const Team = () => {
                   alt={details.name}
                   width={256}
                   height={256}
+
                   className="h-64 w-64 border-4 border-white rounded-lg shadow-md transition-transform transform group-hover:scale-105 hover:shadow-xl  duration-300 mx-auto"
                 />
                 <div className="lg:absolute lg:bottom-2 lg:right-4 absolute bottom-2 right-16 bg-[#1E1E1E] flex text-white opacity-80 group-hover:opacity-100 transition-opacity duration-300">
@@ -94,16 +98,16 @@ const Team = () => {
                 </div>
               </div>
               <div className="flex flex-col mb-0 h-44 pt-2 bg-opacity-70 px-16 lg:px-3 rounded-b-lg lg:text-start text-center">
-                <motion.div className="text-lg md:text-xl font-actor text-white">
+                <motion.div className="lg:text-[12xl]  font-namelight text-[#D4CCCC]">
                   {details.name}
                 </motion.div>
-                <motion.p className="text-lg font-actor font-semibold">
+                <motion.p className="text-[13xl] font-fontsemi  text-[#D4CCCC]">
                   {details.post}
                 </motion.p>
-                <motion.p className="text-lg text-white font-actor">
+                <motion.p className="text-[12xl] text-[#D4CCCC] font-namelight">
                   {details.branch}
                 </motion.p>
-                <motion.p className="text-lg text-white font-actor">
+                <motion.p className="text-[12xl] text-[#D4CCCC] font-namelight">
                   {details.location}
                 </motion.p>
               </div>
@@ -120,24 +124,25 @@ const Team = () => {
           <div className="flex flex-col items-center lg:items-start w-full mt-0 mb-8 lg:mt-80">
             <div className="sm:border-t-2 sm:border-white sm:w-3/4 lg:w-full mx-auto mb-4"></div>
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:gap-0 lg:-ml-8 sm:ml-0">
-              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform font-actor hover:scale-105">
                 <button onClick={() => setYear('final')} className="w-full ">FINAL YEAR</button>
               </div>
-              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
                 <button onClick={() => setYear('Third')} className="w-full ">THIRD YEAR</button>
               </div>
-              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:ml-8 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:ml-8 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
                 <button onClick={() => setYear('second')} className="w-full ">SECOND YEAR</button>
               </div>
-              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform hover:scale-105">
+              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
                 <button onClick={() => setYear('first')} className="w-full ">FIRST YEAR</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-     
+
     </div>
+    </>
   );
 };
 
@@ -149,3 +154,4 @@ const TeamWithApollo = () => (
 
 
 export default TeamWithApollo;
+

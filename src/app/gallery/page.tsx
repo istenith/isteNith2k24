@@ -1,65 +1,100 @@
 "use client";
 import React from 'react';
-import { data } from '../../../data/data';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
 
+const client = new ApolloClient({
+  uri: 'http://localhost:4000/graphql/', 
+  cache: new InMemoryCache(),
+});
+
+const GET_EVENTS = gql`
+  query GetEvents {
+    gallery {
+      image
+      event
+    }
+  }
+`;
+
+interface GalleryItem {
+  image: string;
+  event: string;
+}
+
+interface GetEventsData {
+  gallery: GalleryItem[];
+}
 
 const Gallery: React.FC = () => {
-  
-const [Property, setProperty] = useState("pahal");
-const filteredEvents = data.filter(item => item.event === Property);
-const gridcss = "sm:h-16 h-9 w-[28%] text-md sm:text-4xl rounded-full hover:cursor-pointer font-head justify-center items-center flex" ;
+  const { loading, error, data } = useQuery<GetEventsData>(GET_EVENTS, {
+    client,
+    fetchPolicy: 'cache-first',
+  });
+
+  const [property, setProperty] = useState<string>("pahal");
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  const filteredEvents = data?.gallery.filter(item => item.event === property) || [];
+  const gridcss = "sm:h-16 h-9 w-[28%] text-sm sm:text-3xl rounded-full transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer font-actor justify-center items-center flex";
 
   return (
-    
-    <div className="  background-color: #1E1E1E; text-white min-h-screen">
-      <div className="text-desc sm:text-9xl text-5xl font-extralight mx-24 mt-11 mb-11">
+    <div style={{ backgroundColor: '#171616' }} className="text-white min-h-screen">
+      <div className="font-barlowb sm:text-9xl flex justify-center items-center md:flex-none md:justify-start md:items-start h-[155px] text-5xl mx-24  lg:mt-11 lg:mb-6 -mb-6">
         GALLERY
       </div>
      
-      <div className="flex gap-3 sm:mx-24 mx-6">
-        <div onClick={() => setProperty('pahal')} className={`${gridcss} ${Property ==='pahal' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>pahal</div>
-        <div onClick={() => setProperty('hult')} className={`${gridcss} ${Property ==='hult' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>hult prize</div>
-        <div onClick={() => setProperty('prody')} className={`${gridcss} ${Property ==='prody' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>prodyogiki</div>
-        <div onClick={() => setProperty('prarambh')} className={`${gridcss} ${Property ==='prarambh' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>prarambh</div>
-</div>
+      <div className="flex gap-3 sm:mx-24 font-actor mx-6">
+        <div onClick={() => setProperty('pahal')} className={`${gridcss} ${property === 'pahal' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Pahal</div>
+        <div onClick={() => setProperty('hult')} className={`${gridcss} ${property === 'hult' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Hult Prize</div>
+        <div onClick={() => setProperty('prody')} className={`${gridcss} ${property === 'prody' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Prodyogiki</div>
+        <div onClick={() => setProperty('prarambh')} className={`${gridcss} ${property === 'prarambh' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Prarambh</div>
+      </div>
        
-
-       {/* grid section  */}
+      {/* grid section  */}
       <div className="grid grid-cols-2 sm:grid-cols-8 sm:grid-rows-7 mt-8 h-[650px] sm:mx-24 mx-6 gap-3">
         {filteredEvents.map((item, i) => (
-          <div
-            key={i}
-            className={`bg-white border-2 rounded-xl flex flex-col items-center justify-center  ${
-            i === 2 || i===3  ? 'sm:col-span-2 col-span-1' : ''
-            }  ${
-            i === 0 ? 'sm:col-span-2 col-span-2 ' : ''
-            } 
-            ${i=== 6? 'sm:col-span-3 col-span-2' : ''}
-            ${
-            i === 1 ||i===4 ? 'sm:col-span-4 col-span-1' : ''
-            }  ${i === 5 ? 'sm:col-span-3 col-span-1' : ''}
-
-            ${i === 0 || i=== 1? 'sm:row-span-3' : ''} 
-            ${i === 2 ? 'sm:row-span-5' : ''} 
-            ${i=== 3? 'sm:row-span-4  row-span-2' : ''}
-            ${i=== 4 ||i=== 5 ||i=== 6? 'sm:row-span-2' : ''}
-          
+          <motion.div
+            key={`${property}-${i}`} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: i * 0.2 }}
+            className={`bg-white border-2 rounded-xl flex flex-col items-center justify-center
+            ${i === 2 || i === 3 ? 'sm:col-span-2 col-span-1' : ''}
+            ${i === 0 ? 'sm:col-span-2 col-span-2' : ''}
+            ${i === 6 ? 'sm:col-span-3 col-span-2' : ''}
+            ${i === 1 || i === 4 ? 'sm:col-span-4 col-span-1' : ''}
+            ${i === 5 ? 'sm:col-span-3 col-span-1' : ''}
+            ${i === 0 || i === 1 ? 'sm:row-span-3' : ''}
+            ${i === 2 ? 'sm:row-span-5' : ''}
+            ${i === 3 ? 'sm:row-span-4 row-span-2' : ''}
+            ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
             `}
           >
-            <img
+            <Image
+              width={250}
+              height={250}
               src={item.image}
               alt=""
-              className="w-full h-full rounded-xl object-cover"/>
-               
-            </div>
+              className="w-full h-full rounded-xl object-cover"
+            />
+          </motion.div>
         ))}
-         
       </div>
+      <div className='h-40 lg:h-0'></div>
     </div>
-   
-  
+    
   );
 };
 
-export default Gallery ;
+const GalleryWithApollo: React.FC = () => (
+  <ApolloProvider client={client}>
+    <Gallery />
+  </ApolloProvider>
+);
+
+export default GalleryWithApollo;
