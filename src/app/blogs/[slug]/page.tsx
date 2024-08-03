@@ -36,7 +36,7 @@ export default function Page({ params } :any){
 
     return (
 <>
-<Navbar/>
+
 <div className="min-h-screen  bg-[#171616]   text-white">
             <div className="flex flex-col lg:flex-row ">
                 <div className="w-full lg:w-1/5 lg:mt-8  lg:-top-10 pt-7 pb-3 z-50 lg:ml-80  text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start    lg:bg-transparent ">

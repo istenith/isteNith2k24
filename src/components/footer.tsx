@@ -7,22 +7,22 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 const Footer: React.FC = () => {
   return (
     <footer className='lg:mb-4  lg:mt-20 mt-0 text-white z-50'>
-    <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-16 ">
-    <div className=" flex lg:flex-row  mx-12 lg:ml-20 items-center">
+    <div className=" flex flex-col md:flex-row  lg:flex-row w-full justify-between mt-16 ">
+    <div className=" flex lg:flex-row  mx-auto lg:ml-20 items-center">
       <FaMapLocationDot className=" size-20 lg:size-24  " />
       <div className='lg:ml-8 ml-8'>
         <p className="text-1.2xl font-barlow">Address</p>
         <p className="text-1.2xl font-barlow">NIT, Hamirpur<br />Himachal Pradesh,<br/> India, 177001</p>
       </div>
     </div>
-    <div className=" flex lg:flex-row  mx-12 mt-7 items-center ">
+    <div className=" flex lg:flex-row  mx-auto mt-7 pr-20 items-center ">
       <BiSolidContact className=" size-16 lg:size-24  " />
       <div className=' ml-12 lg:ml-4'>
         <p className="text-1.2xl font-barlow">Phone</p>
         <p className="text-1.2xl font-actor">12345578</p>
       </div>
     </div>
-    <div className="lg:mr-20 flex lg:flex-row mt-7 mx-12 items-center">
+    <div className="lg:mr-20 flex lg:flex-row mt-7 mx-auto pr-7 items-center">
       <HiOutlineMailOpen className=" size-20 lg:size-24 " />
       <div className='lg:ml-8 ml-8  '>
         <p className="text-1.2xl font-barlow " >Email</p>
