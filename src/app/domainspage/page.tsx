@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect, useMemo } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing arrow icons
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; 
 import { CgArrowLongLeft, CgArrowLongRight } from 'react-icons/cg';
 import WordReveal from '@/components/animations/WordReveal';
 
 const DomainPage = () => {
   const [domain, setDomain] = useState<{ title: React.ReactNode; description: string; image: string; rotation: string; } | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animateDescription, setAnimateDescription] = useState(false); // State for animation
+  const [animateDescription, setAnimateDescription] = useState(false);
 
-  // Use useMemo to memoize the domains array
+  
   const domains = useMemo(() => [
     {
       title: <><CgArrowLongLeft className="inline" /> Design <CgArrowLongRight className="inline" /></>,
@@ -36,7 +36,7 @@ const DomainPage = () => {
       image: 'https://i.pinimg.com/564x/96/6f/21/966f212c46f1d4831b82ed2698ce7953.jpg',
       rotation: '-rotate-12'
     }
-  ], []); // Empty dependency array ensures domains is only created once
+  ], []); 
 
   const handlers = useSwipeable({
     onSwipedLeft: () => handleSwipe('left'),

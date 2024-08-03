@@ -5,11 +5,12 @@ import React, { useState } from 'react';
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
     const smcss = 'transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer sm:mt-0 mt-6';
-    
+
     return (
-        <div className=''>
+        <div className="relative">
+            {/* Button for toggling mobile menu */}
             <button
-                className="block absolute top-8 lg:right-24 right-8 rounded-md bg-[#626262] bg-opacity-[68%] z-50"
+                className="block lg:hidden absolute top-8 lg:right-24 right-8 rounded-md bg-[#626262] bg-opacity-[68%] z-50"
                 onClick={() => setMenu(!menu)}
             >
                 <svg
@@ -27,18 +28,56 @@ const Navbar = () => {
                     ></path>
                 </svg>
             </button>
+            
+            {/* Overlay for mobile menu */}
             {menu && (
                 <div
-                    className="w-[60%] bg-opacity-100 z-0 absolute top-0 left-0"
+                    className="fixed inset-0 bg-[#171616] bg-opacity-90 z-40"
                     onClick={() => setMenu(false)}
-                >
-                    {/* Add optional overlay or background content here if needed */}
-                </div>
+                />
             )}
+
+            {/* Mobile Menu */}
             <nav
-                className={`${menu ? 'block p-4' : 'hidden'} flex justify-center -mt-12 items-center`}
+                className={`fixed inset-0 flex flex-col items-center justify-center bg-[#626262] bg-opacity-90 p-4 z-50 lg:hidden ${menu ? 'block' : 'hidden'}`}
             >
-                <ul className="w-[60%] sm:bg-[#626262] bg-opacity-[32%] text-white sm:flex text-4xl sm:text-sm md:text-lg font-fontsemi md:p-4 md:px-7 sm:p-2 mx-10 sm:mt-8 md:mt-14 mt-8 font-light items-center justify-between sm:border-2 rounded-full">
+                <ul className="flex flex-col text-white text-4xl font-light space-y-6">
+                    <li>
+                        <Link href="/" onClick={() => setMenu(false)}>
+                            <div className={smcss}>HOME</div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/members" onClick={() => setMenu(false)}>
+                            <div className={smcss}>MEMBERS</div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/events" onClick={() => setMenu(false)}>
+                            <div className={smcss}>EVENTS</div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/gallery" onClick={() => setMenu(false)}>
+                            <div className={smcss}>GALLERY</div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/blogs" onClick={() => setMenu(false)}>
+                            <div className={smcss}>BLOGS</div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/projects" onClick={() => setMenu(false)}>
+                            <div className={smcss}>PROJECTS</div>
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+
+            {/* Web Menu */}
+            <nav className="hidden lg:flex lg:justify-center lg:items-center lg:space-x-8 lg:bg-transparent lg:p-4 lg:mt-4">
+                <ul className="flex space-x-8 text-white text-lg font-light">
                     <li>
                         <Link href="/">
                             <div className={smcss}>HOME</div>

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FaArrowRight } from 'react-icons/fa';
 import Navbar from "../../components/navbar"
+import Footer from '../../components/footer';
 export default function Home() {
   const blogDir = 'src/blogs/';
 
@@ -76,6 +77,8 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </div></>
+    </div>
+   <Footer/>
+   </>
   );
 }

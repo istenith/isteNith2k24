@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/',
@@ -142,6 +143,7 @@ const Team = () => {
       </div>
 
     </div>
+    <Footer/>
     </>
   );
 };

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
 import Navbar from "../../../components/navbar"
+import Footer from '../../../components/footer';
 
 // Initialize Apollo Client
 const client = new ApolloClient({
@@ -100,7 +101,9 @@ const Gallery: React.FC = () => {
         ))}
       </div>
       <div className='h-60 lg:h-0'></div>
-    </div></>
+    </div>
+    <Footer/>
+    </>
   );
 };
 
