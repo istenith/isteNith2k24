@@ -82,6 +82,8 @@ const Gallery: React.FC = () => {
               width={250}
               height={250}
               src={item.image}
+              quality={100}
+              unoptimized={true}
               alt=""
               className="w-full h-full rounded-xl object-cover"
             />
