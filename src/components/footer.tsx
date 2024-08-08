@@ -6,7 +6,7 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 
 const Footer: React.FC = () => {
   return (
-    <footer className='lg:mb-4  lg:mt-20 mt-40 text-white z-50'>
+    <footer className='lg:mb-4  lg:mt-20 mt-0 text-white z-50'>
     <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-16 ">
     <div className=" flex lg:flex-row  mx-12 lg:ml-20 items-center">
       <FaMapLocationDot className=" size-20 lg:size-24  " />

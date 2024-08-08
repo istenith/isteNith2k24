@@ -39,6 +39,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <nav
+<<<<<<< HEAD
                 className={`fixed inset-0 flex flex-col items-center justify-center bg-[#626262] bg-opacity-90 p-4 z-50 lg:hidden ${menu ? 'block' : 'hidden'}`}
             >
                 <ul className="flex flex-col text-white text-4xl font-light space-y-6">
@@ -78,34 +79,39 @@ const Navbar = () => {
             {/* Web Menu */}
             <nav className="hidden lg:flex lg:justify-center lg:items-center lg:space-x-8 lg:bg-transparent lg:p-4 lg:mt-4">
                 <ul className="flex space-x-8 text-white text-lg font-light">
+=======
+                className={`${menu ? 'block p-4' : 'hidden'} flex justify-center inset-20 -mt-12 items-center`}
+            >
+                <ul className="lg:w-[60%]  w-full grid gap-2 lg:gap-0 grid-cols-2 lg:bg-[#626262] bg-opacity-[32%] text-white sm:flex text-1.2xl lg:text-xl font-fontsemi md:p-4 md:px-7 sm:p-2 mr-4 sm:mt-12 md:mt-14 mt-28  items-center justify-between sm:border-2 rounded-0 lg:rounded-full">
+>>>>>>> 4337738030a4ce643d4356acf5af787e8022ebc3
                     <li>
                         <Link href="/">
-                            <div className={smcss}>HOME</div>
+                            <div className='lg:border-hidden rounded-lg border px-8 lg:px-0 cursor-pointer transition-transform  transform hover:scale-105 ' >HOME</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/members">
-                            <div className={smcss}>MEMBERS</div>
+                            <div className="lg:border-hidden  rounded-lg border  lg:px-0 px-8  cursor-pointer transition-transform  transform hover:scale-105 ">MEMBERS</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/events">
-                            <div className={smcss}>EVENTS</div>
+                            <div className=" lg:border-hidden   rounded-lg border lg:px-0 px-8 cursor-pointer transition-transform  transform hover:scale-105 ">EVENTS</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/gallery">
-                            <div className={smcss}>GALLERY</div>
+                            <div className=" lg:border-hidden  rounded-lg border lg:px-0 px-8  cursor-pointer transition-transform  transform hover:scale-105 ">GALLERY</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/blogs">
-                            <div className={smcss}>BLOGS</div>
+                            <div className=" lg:border-hidden  rounded-lg  border lg:px-0 px-8 cursor-pointer transition-transform  transform hover:scale-105  ">BLOGS</div>
                         </Link>
                     </li>
                     <li>
                         <Link href="/projects">
-                            <div className={smcss}>PROJECTS</div>
+                            <div className="lg:border-hidden  rounded-lg border lg:px-0 px-8 cursor-pointer transition-transform  transform hover:scale-105  ">PROJECTS</div>
                         </Link>
                     </li>
                 </ul>

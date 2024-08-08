@@ -123,7 +123,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <div className='h-28'></div>
+        <div className='lg:h-28 h-0 '></div>
       </div>
       <Footer/>
     </>
