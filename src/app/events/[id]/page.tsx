@@ -95,6 +95,8 @@ const Gallery: React.FC = () => {
               height={400}
               src={item.image}
               alt={item.event}
+              quality={100}
+              unoptimized={true}
               className="w-full h-full rounded-xl object-cover"
             />
           </motion.div>

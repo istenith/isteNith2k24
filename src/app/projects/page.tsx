@@ -74,7 +74,7 @@ const Projects = () => {
       <div className="lg:w-9/12 md:w-8/12 sm:w-9/12 sm:m-auto lg:m-auto mx-6">
         <div className="lg:mt-16 md:mt-20 mt-12">
 {/* for larger screen, use the slider below */}
-          <div className="hidden md:block">
+          <div className="hidden  md:block">
             <Slider {...settings}>
               {topics.map((d: any) => (
                 <motion.div

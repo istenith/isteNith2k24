@@ -46,6 +46,8 @@ return (
   <Image src="/assets/images/util/iste_logo-01-removebg-preview.webp" 
   height={200}
   width ={200}
+  quality={100}
+  unoptimized={true}
   className=" -left-1 logo-44 relative w-20 h-auto z-50 text-white/70" alt="ISTE Logo" / >
   <span className="text-[#ffffff] font-actor ml-nith text-7xl">NITH</span>
 
@@ -59,7 +61,7 @@ return (
       >
         {/* Animated headings */}
         <motion.h1
-          className="text-iste font-barlowlight ml-iste  text-4xl"
+          className="text-iste font-barlowlight ml-iste lg:mt-0 -mt-12 text-4xl"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -150,6 +152,8 @@ return (
       layout='responsive'
       width ={200}
       height={200}
+      quality={100}
+      unoptimized={true}
       className="w-full h-auto flex opacity-50 mx-auto object-cover object-center sm:w-isteimg sm:h-isteimg sm:mt-isteimg"
     />
     <div className="absolute inset-0 flex items-center justify-center">
@@ -178,6 +182,8 @@ return (
   <Image src="/assets/images/util/aboutuspage.webp" 
   height={200}
   width ={200}
+  quality={100}
+  unoptimized={true}
   alt ="" className="relative z-10 h-img2 w-full mt-img2 right-img2 top-6 right-5  hidden sm:block" />
 </div>
 </div>
@@ -232,9 +238,9 @@ return (
     </div>
     <div className="lg:mr-20 flex lg:flex-row mt-7 mx-12 items-center">
       <HiOutlineMailOpen className=" size-20 lg:size-24 " />
-      <div className='lg:ml-8 ml-8  '>
+      <div className='lg:ml-8 ml-8 '>
         <p className="text-1.2xl font-barlow " >Email</p>
-        <p className="text-1.2xl font-barlow ">iste@nith.ac.in</p>
+        <p className="text-1.2xl font-barlow">iste@nith.ac.in</p>
       </div>
     </div>
 

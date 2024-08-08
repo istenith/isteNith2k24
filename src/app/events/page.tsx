@@ -26,6 +26,8 @@ export default function Event() {
                 <Image
                   width={250}
                   height={250}
+                  quality={100}
+                  unoptimized={true}
                   src="/assets/images/hult/DCS_0814.webp"
                   alt="Hult Prize Image"
                   className="hover:scale-110 ease-in duration-300 w-full h-full object-top"
@@ -63,6 +65,8 @@ export default function Event() {
                 <Image
                   width={250}
                   height={250}
+                  quality={100}
+                  unoptimized={true}
                   src="/assets/images/prody/DSC_0268.webp"
                   alt="Prodyogiki Image"
                   className="hover:scale-110 ease-in duration-300 w-full h-full object-cover"
@@ -98,6 +102,8 @@ export default function Event() {
                 <Image
                   width={250}
                   height={250}
+                  quality={100}
+                  unoptimized={true}
                   src="/assets/images/pahal/DSC_0498.webp"
                   alt="Pahal Image"
                   className="hover:scale-110 ease-in duration-300 w-full h-full object-cover"
@@ -133,6 +139,8 @@ export default function Event() {
                 <Image
                   width={250}
                   height={250}
+                  quality={100}
+                  unoptimized={true}
                   src="/assets/images/prarambh/IMG_4054.webp"
                   alt="Prarambh Image"
                   className="w-full h-full object-cover hover:scale-110 ease-in duration-300"

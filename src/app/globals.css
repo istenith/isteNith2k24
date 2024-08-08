@@ -172,7 +172,7 @@ margin-bottom: 1rem;
   margin-top: -11rem;
 }
 .-mt-iste2 {
-  margin-top: -11rem;
+  margin-top: -5rem;
 }
 .-mt-iste3 {
   margin-top: -11rem;
@@ -390,4 +390,7 @@ margin-left: 3rem;
 
 .transition-colors {
   transition: color 0.3s ease;
+}
+.mb-footer {
+  margin-bottom: -82px;
 }
