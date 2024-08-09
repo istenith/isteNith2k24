@@ -3,7 +3,10 @@ const navbarItems = [
     title: "Home",
     link: "/",
   },
- 
+  {
+    title: "Events",
+    link: "/events",
+  },
   
     {
       title: "Gallery",
@@ -21,10 +24,7 @@ const navbarItems = [
       title: "Blogs",
       link: "/blogs",
     },
-    {
-      title: "Events",
-      link: "/events",
-    },
+  
  
  
   ];
