@@ -4,11 +4,14 @@ import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apo
 import { FaInstagram } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/',
   cache: new InMemoryCache(),
-  // credentials: 'include'
 });
 
 const GET_MEMBERS = gql`
@@ -29,7 +32,7 @@ const GET_MEMBERS = gql`
 `;
 
 const Team = () => {
-  const [initialYear, setYear] = useState("finalyear");
+  const [initialYear, setYear] = useState("final");
 
   const { loading, error, data } = useQuery(GET_MEMBERS, {
     client,
@@ -41,63 +44,109 @@ const Team = () => {
 
   const filteredProfiles = data.members.filter(profile => profile.section === initialYear);
 
+  const getFontSize = (year) => {
+    switch (year) {
+      case 'second':
+        return 'text-3xl md:text-5xl lg:text-5xl';
+      case 'final':
+      case 'Third':
+      case 'first':
+        return 'text-3xl md:text-5xl lg:text-6xl';
+      default:
+        return 'text-3xl md:text-5xl lg:text-6xl';
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#1E1E1E] text-white">
-      <div className='bg-[#1E1E1E] sticky top-16 z-50 '>
-        <div className="mx-10 text-4xl md:text-6xl font-sans">ISTE NITH</div>
-        <div className="border-t-2 border-white my-4 mx-10"></div>
+  <>
+<Navbar/>
+    <div className="min-h-screen bg-[#171616]  text-white">
+      <div className="bg-[#171616] lg:w-full top-0 z-50">
+        <div className="lg:ml-16  mx-auto lg:px-0 pt-5 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
+        <div className="border-t-2 border-white mx-auto -mt-2  lg:my-1 w-10/12 lg:w-11/12"></div>
       </div>
-      <div className='flex mt-24 flex-col lg:flex-row'>
-        <div className="grid w-full lg:w-3/4 ml-10 md:grid-cols-2 lg:grid-cols-4  ">
+
+      <div className="flex flex-col-reverse lg:flex-row mt-16 pt-24 lg:pt-0 lg:mt-10   ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 w-full md:w-full lg:w-9/12 lg:mx-12">
           {filteredProfiles.map((details, index) => (
-            <div className="w-full " key={index}>
-              <div className="flex flex-col relative">
-                <img
+            <motion.div
+              className="w-full mb-6 md:mb-8 lg:mb-0"
+              key={`${initialYear}-${index}`}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+            >
+              <div className="relative group">
+                <Image
                   src={details.img}
-                  alt=""
-                  className="h-64 w-64 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                  alt={details.name}
+                  width={256}
+                  height={256}
+                  quality={100}
+                  unoptimized={true}
+
+                  className="h-64 w-64 border-4 border-white rounded-lg shadow-md transition-transform transform group-hover:scale-105 hover:shadow-xl  duration-300 mx-auto"
                 />
-                <div className="bg-[#1E1E1E] absolute bottom-2  lg:right-8 flex space-x-2 text-white opacity-80 hover:opacity-100 transition-opacity duration-300">
-                  <Link href={details.instagram} className="flex items-center justify-center h-8 w-8">
-                    <FaInstagram />
-                  </Link>
-                  <Link href={details.linkedin} className="flex items-center justify-center h-8 w-8">
-                    <TiSocialLinkedin />
-                  </Link>
+                <div className="lg:absolute lg:bottom-2 md:right-32 lg:right-4 absolute bottom-2 ml-52 bg-[#1E1E1E] flex text-white opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                  {details.instagram && (
+                    <Link href={details.instagram} target="_blank" className="flex items-center justify-center ml-2 h-8 w-8">
+                      <FaInstagram />
+                    </Link>
+                  )}
+                  {details.linkedin && (
+                    <Link href={details.linkedin} target="_blank" className="flex items-center justify-center mr-2 h-8 w-8">
+                      <TiSocialLinkedin />
+                    </Link>
+                  )}
                 </div>
               </div>
-              <div className='flex flex-col sm:flex-row'>
-                <div className="mt-2 w-4/5">
-                  <h1 className="font-sans tracking-expanded text-slate-400">{details.name}</h1>
-                  <p className="font-sans tracking-expanded text-white font-bold">{details.post}</p>
-                  <p className="font-sans tracking-expanded text-slate-400">{details.branch}</p>
-                  <p className="font-sans tracking-expanded text-slate-400 mb-2">{details.location}</p>
-                </div>
+              <div className="flex flex-col mb-0 h-44 pt-2 bg-opacity-70 px-16 lg:px-3 rounded-b-lg lg:text-start text-center">
+                <motion.div className="lg:text-[12xl]  font-namelight text-[#D4CCCC]">
+                  {details.name}
+                </motion.div>
+                <motion.p className="text-[13xl] font-fontsemi  text-[#D4CCCC]">
+                  {details.post}
+                </motion.p>
+                <motion.p className="text-[12xl] text-[#D4CCCC] font-namelight">
+                  {details.branch}
+                </motion.p>
+                <motion.p className="text-[12xl] text-[#D4CCCC] font-namelight">
+                  {details.location}
+                </motion.p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-        <div className='flex flex-col fixed right-16'>
-          <div className='text-5xl lg:text-7xl font-sans'>
-            {initialYear.toUpperCase().substring(0, 5)}<br />
-            {initialYear.toUpperCase().substring(5, 11)}
+
+        <div className="flex flex-col items-center lg:items-start  lg:right-12 lg:mt-0 -mt-36 ">
+          <div className={`font-barlow ${getFontSize(initialYear)} font-f2 flex flex-row lg:flex-col items-center lg:items-start text-center lg:text-left`}>
+            <div>{initialYear.toUpperCase()}</div>
+            <div className="lg:mt-2 ml-2 lg:ml-0">YEAR</div>
           </div>
-          <div className="border-t-2 border-white mt-20 lg:mt-80 mr-4"></div>
-          <div className="text-xl lg:text-2xl mt-2 text-slate-300 font-sans hover:brightness-150">
-            <button onClick={() => setYear('finalyear')}>FINAL YEAR</button>
-          </div>
-          <div className="text-xl lg:text-2xl mt-2 mb-1 text-slate-300 font-sans hover:brightness-150">
-            <button onClick={() => setYear('Thirdyear')}>THIRD YEAR</button>
-          </div>
-          <div className="text-xl lg:text-2xl mb-1 text-slate-300 font-sans hover:brightness-150">
-            <button onClick={() => setYear('secondyear')}>SECOND YEAR</button>
-          </div>
-          <div className="text-xl lg:text-2xl mb-1 text-slate-300 font-sans hover:brightness-150">
-            <button onClick={() => setYear('firstyear')}>FIRST YEAR</button>
+
+          <div className="flex flex-col items-center lg:items-start w-full mt-0 mb-8 lg:mt-80">
+            <div className="sm:border-t-2 sm:border-white sm:w-3/4 lg:w-full mx-auto mb-4"></div>
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:gap-0 lg:-ml-8 sm:ml-0">
+              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform transform font-actor hover:scale-105">
+                <button onClick={() => setYear('final')} className="w-full ">FINAL YEAR</button>
+              </div>
+              <div className="border-2 lg:border-hidden border-white rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
+                <button onClick={() => setYear('Third')} className="w-full ">THIRD YEAR</button>
+              </div>
+              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:ml-8 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
+                <button onClick={() => setYear('second')} className="w-full ">SECOND YEAR</button>
+              </div>
+              <div className="border-2 border-white lg:border-hidden rounded-lg sm:p-2 lg:p-0 lg:text-2xl text-1.3xl text-center transition-transform font-actor transform hover:scale-105">
+                <button onClick={() => setYear('first')} className="w-full ">FIRST YEAR</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
+    <Footer/>
+    </>
   );
 };
 
@@ -107,4 +156,6 @@ const TeamWithApollo = () => (
   </ApolloProvider>
 );
 
+
 export default TeamWithApollo;
+

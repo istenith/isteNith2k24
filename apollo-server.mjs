@@ -2,10 +2,12 @@ import { ApolloServer, gql } from 'apollo-server-express';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 
 const typeDefs = gql`
   type Member {
@@ -33,8 +35,8 @@ const typeDefs = gql`
 
   type Gallery {
     id: ID!
-    imgSrc: String!
-    tag: String
+    image: String!
+    event: String
   }
 
   type Query {
@@ -44,34 +46,47 @@ const typeDefs = gql`
   }
 `;
 
+
 const resolvers = {
   Query: {
     members: async () => {
-      const { profileDetails } = await import(path.resolve(__dirname, './data/member_data.mjs'));
+      const { profileDetails } = await import(pathToFileURL(path.resolve(__dirname, './data/member_data.mjs')).href);
       return profileDetails;
     },
-    blogPosts: () => blogPosts, // to be implemented yet
-    gallery: () => galleryData, // to be implemented yet
+    blogPosts: async () => {
+      // Implement logic for fetching blogPosts data
+      return []; // Placeholder, replace with actual data fetching logic
+    },
+    gallery: async () => {
+      const { data } = await import(pathToFileURL(path.resolve(__dirname, './data/data.mjs')).href);
+      return data;
+    },
   },
 };
 
-const app = express();
 
+const app = express();
 app.use(cors());
 
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  playground: true,
-  introspection: true,
-});
 
-await server.start();
+const startApolloServer = async () => {
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    introspection: true, 
+    playground: true, 
+  });
 
-server.applyMiddleware({ app, path: '/graphql' });
+  await server.start();
+  server.applyMiddleware({ app, path: '/graphql' });
 
-const PORT = 4000;
+  const PORT = 4000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`);
+  });
+};
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`);
+
+startApolloServer().catch((err) => {
+  console.error('Error starting Apollo Server:', err);
 });
