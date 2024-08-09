@@ -109,7 +109,7 @@ export default function ExpandableCardDemo() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-white text-xs md:text-sm lg:text-base h-40 md:h-fit  flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-white text-xs md:text-sm lg:text-base h-36 md:h-fit  flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content
@@ -117,11 +117,11 @@ export default function ExpandableCardDemo() {
                   </motion.div>
 
 
-                 <div className="mb-4 font-actor text-2xl py-2"> <motion.a
+                 <div className="mb-4 font-actor text-2xl lg:pb-4 lg:pt-1  "> <motion.a
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className=" mx-[30%] lg:mt-28 mt-4 rounded-lg px-2  bg-white  hover:bg-white/70"
+                    className=" mx-[30%] lg:mt-28  rounded-lg px-2  bg-white  hover:bg-white/70"
                   >
                  
                        {active.ctatext}
