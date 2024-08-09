@@ -67,7 +67,7 @@ const Projects = () => {
   return (
     <>
 <Navbar/>
-      <div className="lg:text-[167px] md:text-8xl text-5xl   font-barlowb text-white lg:pt-16 lg:mx-20 mx-20 pt-4">
+      <div className="lg:text-[140px] md:text-8xl text-5xl   font-barlowb text-white lg:pt-20 lg:mx-20 mx-20 pt-4">
         PROJECTS
       </div>
       <div className="border-t-2 border-gray-200 md:mx-20 lg:mx-24 mx-4 lg:mt-0"></div>

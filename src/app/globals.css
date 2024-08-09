@@ -430,12 +430,13 @@ margin-left: 3rem;
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) and (max-width: 768px){
+  
   .ml-nith {
     margin-left: 4rem;
   }
   .ml-iste {
-    margin-left: 0rem;
+    margin-left: -15rem;
   }
   .text-iste {
     font-size: 9rem;
