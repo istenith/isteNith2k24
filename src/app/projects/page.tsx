@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../globals.css";
 import { motion } from "framer-motion";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar1";
 import Footer from '../../components/footer';
 
 // Custom arrows for the slider

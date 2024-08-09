@@ -6,7 +6,7 @@ import { CardContainer, CardBody, CardItem } from "../../components/ui/sticky-sc
 import Link from "next/link";
 import Footer from "../../components/footer"
 import { BackgroundBeams } from "@/components/ui/background_beams";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar1";
 
 export default function ThreeDCardDemo() {
   return (

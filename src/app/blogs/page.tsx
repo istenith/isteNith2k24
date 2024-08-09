@@ -2,7 +2,7 @@ import React from "react";
 import BlogList from "../../components/ui/blogCards";
 import { BackgroundBeams } from "@/components/ui/background_beams";
 import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar1";
 
 
 

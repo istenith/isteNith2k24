@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import OverflowDropdown from "../../../components/OverflowDropdown"
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import Navbar from  "../../../components/navbar"
+import Navbar from  "../../../components/navbar1"
 import Footer from "../../../components/footer";
 export async function generateStaticParams(){
 
