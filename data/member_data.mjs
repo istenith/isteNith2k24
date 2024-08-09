@@ -28,18 +28,7 @@ export const profileDetails = [
         location: "Varanasi, Uttar Pradesh",
         about: "Batch 2025",
       },
-      {
-        name: "Charu",
-        section: "final",
-        post: "Treasurer",
-        linkedin: "https://www.linkedin.com/in/charu-229665223",
-        instagram: "https://www.instagram.com/charuchauhan575/",
-        img: "/assets/images/finalyear/charu.webp",
-        rollNumber: "1gYhb-XoUU6OsD2Zrk-eqEUR94UtYotqJ",
-        branch: "Mechanical Engineering",
-        location: "Kangra, Himachal Pradesh",
-        about: "Batch 2025",
-      },
+
       {
         name: "Dharuva Thakur",
         section: "final",
@@ -177,6 +166,18 @@ export const profileDetails = [
         location: "Shimla, Himachal Pradesh",
         about:
           "A Civil Engineering Undergraduate interested in core and currently working on core-based technical skills.",
+      },
+      {
+        name: "Charu",
+        section: "final",
+        post: "Treasurer",
+        linkedin: "https://www.linkedin.com/in/charu-229665223",
+        instagram: "https://www.instagram.com/charuchauhan575/",
+        img: "/assets/images/finalyear/charu.webp",
+        rollNumber: "1gYhb-XoUU6OsD2Zrk-eqEUR94UtYotqJ",
+        branch: "Mechanical Engineering",
+        location: "Kangra, Himachal Pradesh",
+        about: "Batch 2025",
       },
       {
         name: "Siya Rana",
