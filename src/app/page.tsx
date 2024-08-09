@@ -52,14 +52,14 @@ return (
   <span className="text-[#ffffff] font-actor ml-nith text-7xl">NITH</span>
 
   <div className="flex flex-col items-center justify-center absolute top-iste left-1/4">
-      {/* Motion.div container for animating the entire block */}
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="flex flex-col items-center justify-center"
       >
-        {/* Animated headings */}
+
         <motion.h1
           className="text-iste font-barlowlight ml-iste lg:mt-0 -mt-12 text-4xl"
           initial={{ opacity: 0, y: 50 }}
@@ -117,7 +117,7 @@ return (
 
       {/* Navigation menu */}
       <nav
-        className={`absolute top-44 right-0 pr-20 text-white md:flex md:space-y-4 ${menu ? 'block bg-1e1e1e p-4' : 'hidden'}`}
+        className={`absolute top-44 right-0 pr-28 text-white md:flex md:space-y-4 ${menu ? 'block bg-1e1e1e p-4' : 'hidden'}`}
       >
         <ul className="flex flex-col md:space-y-8 md:flex md:items-center">
           {pagenames.map((item, index) => (

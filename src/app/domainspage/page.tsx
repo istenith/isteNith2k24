@@ -37,7 +37,14 @@ const DomainPage = () => {
       rotation: '-rotate-12'
     }
   ], []); // Empty dependency array ensures domains is only created once
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % domains.length);
+    }, 5000); // Change the interval time (5000ms = 5 seconds) as needed
 
+    return () => clearInterval(interval); // Clear the interval on component unmount
+  }, [domains.length]);
+  
   const handlers = useSwipeable({
     onSwipedLeft: () => handleSwipe('left'),
     onSwipedRight: () => handleSwipe('right'),
@@ -99,12 +106,7 @@ const DomainPage = () => {
           </div>
         </div>
       )}
-      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 block lg:hidden">
-        <FaChevronLeft className="w-10 h-10 text-white cursor-pointer" onClick={() => handleSwipe('right')} />
-      </div>
-      <div className="absolute right-4 top-1/2 transform -translate-y-1/2 block lg:hidden">
-        <FaChevronRight className="w-10 h-10 text-white cursor-pointer" onClick={() => handleSwipe('left')} />
-      </div>
+      
     </div>
   );
 };
