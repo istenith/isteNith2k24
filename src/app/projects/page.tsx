@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../globals.css";
 import { motion } from "framer-motion";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar1";
 import Footer from '../../components/footer';
 
 // Custom arrows for the slider
@@ -66,15 +66,15 @@ const Projects = () => {
 
   return (
     <>
-     <Navbar/>
-      <div className="lg:text-[167px] md:text-8xl text-5xl mt-7 mx-12 md:mt-16 font-barlowb text-white lg:mx-20 lg:px-2 lg:mt-12">
+<Navbar/>
+      <div className="lg:text-[167px] md:text-8xl text-5xl   font-barlowb text-white lg:pt-16 lg:mx-20 mx-20 pt-4">
         PROJECTS
       </div>
       <div className="border-t-2 border-gray-200 md:mx-20 lg:mx-24 mx-4 lg:mt-0"></div>
       <div className="lg:w-9/12 md:w-8/12 sm:w-9/12 sm:m-auto lg:m-auto mx-6">
         <div className="lg:mt-16 md:mt-20 mt-12">
 {/* for larger screen, use the slider below */}
-          <div className="hidden md:block">
+          <div className="hidden  md:block">
             <Slider {...settings}>
               {topics.map((d: any) => (
                 <motion.div
@@ -126,6 +126,7 @@ const Projects = () => {
         <div className='lg:h-28 h-0 '></div>
       </div>
       <Footer/>
+
     </>
   );
 };

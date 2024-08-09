@@ -37,6 +37,9 @@ const typeDefs = gql`
     id: ID!
     image: String!
     event: String
+    title: String
+    desc: String
+    set: String
   }
 
   type Query {

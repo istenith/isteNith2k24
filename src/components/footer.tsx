@@ -1,38 +1,65 @@
-// src/components/Footer.tsx
 import React from 'react';
-import { FaMapLocationDot } from "react-icons/fa6";
-import { BiSolidContact } from 'react-icons/bi';
-import { HiOutlineMailOpen } from 'react-icons/hi';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaLinkedin, FaGithub} from 'react-icons/fa';
+import Image from 'next/image';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className='lg:mb-4  lg:mt-20 mt-0 text-white z-50'>
-    <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-16 ">
-    <div className=" flex lg:flex-row  mx-12 lg:ml-20 items-center">
-      <FaMapLocationDot className=" size-20 lg:size-24  " />
-      <div className='lg:ml-8 ml-8'>
-        <p className="text-1.2xl font-barlow">Address</p>
-        <p className="text-1.2xl font-barlow">NIT, Hamirpur<br />Himachal Pradesh,<br/> India, 177001</p>
+    <>
+    <footer className="bg-[#171616] text-white">
+      <div className="container mx-auto px-4 py-8 sm:px-8 md:px-16 lg:px-32">
+        <div className="flex flex-col items-center mb-8">
+          <div className="mb-footer">
+            <Image 
+              src="/assets/images/util/iste_logo-01-removebg-preview.webp" 
+              alt="Website Logo" 
+              width={250} 
+              height={75} 
+            />
+          </div>
+          <p className="text-3xl lg:mb-2 mb-0 font-medium">ISTE NITH</p>
+          <hr className="w-3/4 lg:w-full border-gray-600 my-4 py-4" />
+          <div className="flex mb-8 space-x-4 lg:space-x-16">
+            <a 
+              href="https://www.linkedin.com/company/iste-nith/" 
+              className="p-3 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:bg-gray-900 hover:text-white hover:opacity-100 hover:scale-110"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a 
+              href="https://github.com/istenith" 
+              className="p-3 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:bg-gray-900 hover:text-white hover:opacity-100 hover:scale-110"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a 
+              href="https://maps.app.goo.gl/Wzwst1ZgeqPKxDUi6" 
+              className="p-3 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:bg-gray-900 hover:text-white hover:opacity-100 hover:scale-110"
+            >
+              <FaMapMarkerAlt size={24} />
+            </a>
+            <a 
+              href="https://www.instagram.com/teamistenith/" 
+              className="p-3 bg-white text-black rounded-full transition duration-500 ease-in-out transform hover:bg-gray-900 hover:text-white hover:opacity-100 hover:scale-110"
+            >
+              <FaInstagram size={24} />
+            </a>
+          </div>
+        </div>
+        <div className="flex justify-between items-center text-sm text-gray-400">
+          <p className="hidden sm:block">© 2024 All Rights Reserved</p>
+          <p className="block sm:hidden text-center">© 2024 All Rights Reserved</p>
+          <span className="hidden sm:block hover:underline cursor-pointer">Contact Us</span>
+          <span className="block sm:hidden text-center hover:underline cursor-pointer">Contact Us</span>
+        </div>
       </div>
-    </div>
-    <div className=" flex lg:flex-row  mx-12 mt-7 items-center ">
-      <BiSolidContact className=" size-16 lg:size-24  " />
-      <div className=' ml-12 lg:ml-4'>
-        <p className="text-1.2xl font-barlow">Phone</p>
-        <p className="text-1.2xl font-actor">12345578</p>
-      </div>
-    </div>
-    <div className="lg:mr-20 flex lg:flex-row mt-7 mx-12 items-center">
-      <HiOutlineMailOpen className=" size-20 lg:size-24 " />
-      <div className='lg:ml-8 ml-8  '>
-        <p className="text-1.2xl font-barlow " >Email</p>
-        <p className="text-1.2xl font-barlow ">iste@nith.ac.in</p>
-      </div>
-    </div>
 
-  </div>
-  
-  </footer>
+
+</footer>
+
+    
+      </>
+    
+
   );
 };
 

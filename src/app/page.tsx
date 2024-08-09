@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
-
+import Footer from '@/components/footer';
 import Head from 'next/head';
 import { BiSolidContact } from "react-icons/bi";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -46,15 +46,48 @@ return (
   <Image src="/assets/images/util/iste_logo-01-removebg-preview.webp" 
   height={200}
   width ={200}
+  quality={100}
+  unoptimized={true}
   className=" -left-1 logo-44 relative w-20 h-auto z-50 text-white/70" alt="ISTE Logo" / >
   <span className="text-[#ffffff] font-actor ml-nith text-7xl">NITH</span>
 
   <div className="flex flex-col items-center justify-center absolute top-iste left-1/4">
-  
-    <h1 className="text-iste font-barlowlight ml-iste -mt-60 :text-4xl">ISTE</h1>
-    <h1 className="text-white/30  font-barlowlight text-iste ml-iste -mt-iste2 " style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
-    <h1 className="text-white/10  font-barlowlight text-iste ml-iste -mt-iste3" style={{ clipPath: 'inset(60% 0 0 0)' }}>ISTE</h1>
-  </div>
+      {/* Motion.div container for animating the entire block */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="flex flex-col items-center justify-center"
+      >
+        {/* Animated headings */}
+        <motion.h1
+          className="text-iste font-barlowlight ml-iste lg:mt-0 -mt-12 text-4xl"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          ISTE
+        </motion.h1>
+        <motion.h1
+          className="text-white/30 font-barlowlight text-iste ml-iste -mt-iste2 "
+          style={{ clipPath: 'inset(60% 0 0 0)' }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+        >
+          ISTE
+        </motion.h1>
+        <motion.h1
+          className="text-white/10 font-barlowlight text-iste ml-iste -mt-iste3 "
+          style={{ clipPath: 'inset(60% 0 0 0)' }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+        >
+          ISTE
+        </motion.h1>
+      </motion.div>
+    </div>
   <div className="relative">
       {/* Hamburger button for mobile view */}
       <button
@@ -100,7 +133,7 @@ return (
                   {item.name}
                 </div>
               </Link>
-              {/* Decorative elements for navigation items */}
+
               <span className="hidden md:flex w-24 h-px bg-white"></span>
               <span className="hidden md:flex w-3 h-3 bg-white rounded-full"></span>
             </motion.li>
@@ -119,6 +152,8 @@ return (
       layout='responsive'
       width ={200}
       height={200}
+      quality={100}
+      unoptimized={true}
       className="w-full h-auto flex opacity-50 mx-auto object-cover object-center sm:w-isteimg sm:h-isteimg sm:mt-isteimg"
     />
     <div className="absolute inset-0 flex items-center justify-center">
@@ -147,6 +182,8 @@ return (
   <Image src="/assets/images/util/aboutuspage.webp" 
   height={200}
   width ={200}
+  quality={100}
+  unoptimized={true}
   alt ="" className="relative z-10 h-img2 w-full mt-img2 right-img2 top-6 right-5  hidden sm:block" />
 </div>
 </div>
@@ -169,21 +206,17 @@ return (
 
 
 
-
-
-
-
-
-      <div className="flex flex-col items-center justify-center min-h-screen  text-white  -mt-1 lg:mt-0">
-      <h1 className=" text-5xl lg:text-[170px] font-barlowmedium mb-12">CONTACT</h1>
-      <p className=" lg:text-[32px] text-2xl px-12 lg:px-32  text-[#FFFFFF]  mb-0 lg:mb-116 text-center font-actor">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-[#171616]  text-white  -mt-1 lg:mt-0">
+      <h1 className=" text-5xl lg:text-[88px] font-barlowmedium mb-12">CONTACT</h1>
+      <p className=" lg:text-[32px] text-2xl px-12 lg:px-32  text-[#FFFFFF]  mb-0 lg:mb-40 text-center font-actor">
         Have a question or need assistance? Our team is always ready to help.
         Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>
 
+
     </div>
 
-    <footer className='  lg:-mt-40 -mt-20 text-white z-50'>
+    <footer className='  bg-[#171616] z-50'>
     <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-0 ">
     <div className=" flex lg:flex-row  mx-12 lg:ml-20 items-center">
       <FaMapLocationDot className=" size-20 lg:size-24  " />
@@ -208,8 +241,13 @@ return (
     </div>
 
   </div>
+  <div className='lg:h-40  h-0'>
+
+  </div>
   
   </footer>
+<Footer/>
+
 
  </div> 
 );};
