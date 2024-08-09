@@ -1,11 +1,10 @@
 "use client";
 import React from 'react';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion} from 'framer-motion';
 import Image from 'next/image';
 import { ApolloClient, InMemoryCache, useQuery, gql, ApolloProvider } from '@apollo/client';
-import Navbar from "../../components/navbar"
-import Footer from '../../components/footer';
+
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql/', 
   cache: new InMemoryCache(),
@@ -16,6 +15,9 @@ const GET_EVENTS = gql`
     gallery {
       image
       event
+      set
+      desc
+      title
     }
   }
 `;
@@ -23,80 +25,167 @@ const GET_EVENTS = gql`
 interface GalleryItem {
   image: string;
   event: string;
+  set: string;
+  title: string;
+  desc: string;
 }
 
 interface GetEventsData {
   gallery: GalleryItem[];
 }
 
+
 const Gallery: React.FC = () => {
+  
   const { loading, error, data } = useQuery<GetEventsData>(GET_EVENTS, {
     client,
     fetchPolicy: 'cache-first',
   });
 
-  const [property, setProperty] = useState<string>("pahal");
+
+
+
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
-  const filteredEvents = data?.gallery.filter(item => item.event === property) || [];
-  const gridcss = "sm:h-16 h-9 w-[28%] text-sm sm:text-3xl rounded-full transition-transform duration-300 hover:-translate-y-1.5 cursor-pointer font-actor justify-center items-center flex";
+
+  const set1 = data?.gallery.filter(item => item.set === "set1") || [];
+  const set2 = data?.gallery.filter(item => item.set === "set2") || [];
+  const set3 = data?.gallery.filter(item => item.set === "set3") || [];
+  
 
   return (
-   <>
-   <Navbar/>
-   <div style={{ backgroundColor: '#171616' }} className="text-white min-h-screen">
-      <div className="font-barlowb sm:text-9xl flex justify-center items-center md:flex-none md:justify-start md:items-start h-[155px] text-5xl mx-24  lg:mt-11 lg:mb-6 -mb-6">
-        GALLERY
-      </div>
-     
-      <div className="flex gap-3 sm:mx-24 font-actor mx-6">
-        <div onClick={() => setProperty('pahal')} className={`${gridcss} ${property === 'pahal' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Pahal</div>
-        <div onClick={() => setProperty('hult')} className={`${gridcss} ${property === 'hult' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Hult Prize</div>
-        <div onClick={() => setProperty('prody')} className={`${gridcss} ${property === 'prody' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Prodyogiki</div>
-        <div onClick={() => setProperty('prarambh')} className={`${gridcss} ${property === 'prarambh' ? 'bg-[#535353]' : 'bg-[#D9D9D9] bg-opacity-65'}`}>Prarambh</div>
-      </div>
-       
-      {/* grid section  */}
-      <div className="grid grid-cols-2 sm:grid-cols-8 sm:grid-rows-7 mt-8 h-[650px] sm:mx-24 mx-6 gap-3">
-        {filteredEvents.map((item, i) => (
-          <motion.div
-            key={`${property}-${i}`} 
+    <div className="background-color: #1E1E1E; text-white min-h-screen">
+  
+    <div className="font-barlow sm:text-9xl flex justify-center items-center md:flex-none md:justify-start md:items-start height-155 text-5xl mx-24 mt-11 mb-6 sm:mb-11">
+      GALLERY
+    </div>
+  
+     <div className='flex flex-col gap-1'>
+    {/* grid section 1 */}
+    <div className="grid grid-cols-2 sm:grid-cols-8 sm:grid-rows-7 mt-8 h-[650px] sm:mx-24 mx-6 gap-3">
+      {set1.map((item, i) => (
+            <motion.div
+            key={`${i}`} 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2, delay: i * 0.2 }}
-            className={`bg-white border-2 rounded-xl flex flex-col items-center justify-center
-            ${i === 2 || i === 3 ? 'sm:col-span-2 col-span-1' : ''}
-            ${i === 0 ? 'sm:col-span-2 col-span-2' : ''}
-            ${i === 6 ? 'sm:col-span-3 col-span-2' : ''}
-            ${i === 1 || i === 4 ? 'sm:col-span-4 col-span-1' : ''}
-            ${i === 5 ? 'sm:col-span-3 col-span-1' : ''}
-            ${i === 0 || i === 1 ? 'sm:row-span-3' : ''}
-            ${i === 2 ? 'sm:row-span-5' : ''}
-            ${i === 3 ? 'sm:row-span-4 row-span-2' : ''}
-            ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
-            `}
-          >
-            <Image
-              width={250}
-              height={250}
-              src={item.image}
-              quality={100}
-              unoptimized={true}
-              alt=""
-              className="w-full h-full rounded-xl object-cover"
-            />
-          </motion.div>
-        ))}
-      </div>
-      <div className='h-40 lg:h-0'></div>
+          
+          className={`border-2 rounded-xl flex flex-col relative group items-center justify-center
+          ${i === 2 || i === 3 ? 'sm:col-span-2 col-span-1' : ''}
+          ${i === 0 ? 'sm:col-span-2 col-span-2' : ''}
+          ${i === 6 ? 'sm:col-span-3 col-span-2' : ''}
+          ${i === 1 || i === 4 ? 'sm:col-span-4 col-span-1' : ''}
+          ${i === 5 ? 'sm:col-span-3 col-span-1' : ''}
+          ${i === 0 || i === 1 ? 'sm:row-span-3' : ''}
+          ${i === 2 ? 'sm:row-span-5' : ''}
+          ${i === 3 ? 'sm:row-span-4 row-span-2' : ''}
+          ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
+          `}
+        >
+          <Image
+            quality={100}
+            unoptimized= {true}
+             width={250}
+             height={250}
+            src={item.image}
+            alt=""
+            className="w-full h-full rounded-xl object-cover group-hover:scale-[1.02] group-hover:brightness-[40%]"
+          />
+           <div className="absolute bottom-0 left-0 p-1 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50 ">
+            
+    <div className='font-barlowb md:text-xl text-[14px] '>{item.title}</div>
+    <div className='font-actor md:text-lg text-[12px]'>{item.desc}</div>
+  </div>
+        </motion.div>
+      ))}
+</div>
+
+    {/* grid section 2 */}
+    <div className="grid grid-cols-2 sm:grid-cols-8 sm:grid-rows-7 sm:mt-3 h-[650px] sm:mx-24 mx-6 gap-3">
+      {set2.map((item, i) => (
+            <motion.div
+            key={`${i}`} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: i * 0.2 }}
+          
+          className={`border-2 rounded-xl flex flex-col relative group items-center justify-center
+          ${i === 2 || i === 3 ? 'sm:col-span-2 col-span-1' : ''}
+          ${i === 0 ? 'sm:col-span-2 col-span-2' : ''}
+          ${i === 6 ? 'sm:col-span-3 col-span-2' : ''}
+          ${i === 1 || i === 4 ? 'sm:col-span-4 col-span-1' : ''}
+          ${i === 5 ? 'sm:col-span-3 col-span-1' : ''}
+          ${i === 0 || i === 1 ? 'sm:row-span-3' : ''}
+          ${i === 2 ? 'sm:row-span-5' : ''}
+          ${i === 3 ? 'sm:row-span-4 row-span-2' : ''}
+          ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
+          `}
+        >
+          <Image
+            quality={100}
+            unoptimized= {true}
+             width={250}
+             height={250}
+            src={item.image}
+            alt=""
+            className="w-full h-full rounded-xl object-cover group-hover:scale-[1.02] group-hover:brightness-[40%]"
+          />
+           <div className="absolute bottom-0 left-0 p-1 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50 ">
+            
+    <div className='font-barlowb md:text-xl text-[14px] '>{item.title}</div>
+    <div className='font-actor md:text-lg text-[12px]'>{item.desc}</div>
+  </div>
+        </motion.div>
+      ))}
+</div>
+
+ {/* grid section 3 */}
+ <div className="grid grid-cols-2 sm:grid-cols-8 sm:grid-rows-7 mt-3 h-[650px] sm:mx-24 mx-6 gap-3">
+      {set3.map((item, i) => (
+            <motion.div
+            key={`${i}`} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: i * 0.2 }}
+          
+          className={`border-2 rounded-xl flex flex-col relative group items-center justify-center
+          ${i === 2 || i === 3 ? 'sm:col-span-2 col-span-1' : ''}
+          ${i === 0 ? 'sm:col-span-2 col-span-2' : ''}
+          ${i === 6 ? 'sm:col-span-3 col-span-2' : ''}
+          ${i === 1 || i === 4 ? 'sm:col-span-4 col-span-1' : ''}
+          ${i === 5 ? 'sm:col-span-3 col-span-1' : ''}
+          ${i === 0 || i === 1 ? 'sm:row-span-3' : ''}
+          ${i === 2 ? 'sm:row-span-5' : ''}
+          ${i === 3 ? 'sm:row-span-4 row-span-2' : ''}
+          ${i === 4 || i === 5 || i === 6 ? 'sm:row-span-2' : ''}
+          `}
+        >
+          <Image
+            quality={100}
+            unoptimized= {true}
+             width={250}
+             height={250}
+            src={item.image}
+            alt=""
+            className="w-full h-full rounded-xl object-cover group-hover:scale-[1.02] group-hover:brightness-[40%]"
+          />
+           <div className="absolute bottom-0 left-0 p-1 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50 ">
+            
+    <div className='font-barlowb md:text-xl text-[14px] '>{item.title}</div>
+    <div className='font-actor md:text-lg text-[12px]'>{item.desc}</div>
+  </div>
+        </motion.div>
+      ))}
+</div>
+
+      <div className='h-28 lg:h-0'></div>
     </div>
-    <Footer/>
-   </>
-    
+    </div>
   );
 };
+
 
 const GalleryWithApollo: React.FC = () => (
   <ApolloProvider client={client}>

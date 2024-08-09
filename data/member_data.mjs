@@ -145,7 +145,7 @@ export const profileDetails = [
       {
         name: "Navdeep Kaur",
         section: "final",
-        post: "oint PR Head",
+        post: "Joint PR Head",
         linkedin: "https://www.linkedin.com/in/navdeep-kaur-44375022a/",
         instagram: "https://www.instagram.com/navikaur_612/",
         img: "/assets/images/finalyear/navdeep.webp",
@@ -473,16 +473,7 @@ export const profileDetails = [
   img: "/assets/images/secondyear/AshutoshK.webp",
 },
 
-{
-  name: "Avirat Mahajan",
-  section: "second",
-  post: "Executive Members",
-  branch: "Electronics and Communication Engineering",
-  location: "Shimla, Himachal Pradesh",
-  linkedin: "https://www.linkedin.com/in/avirat-mahajan-77911a289",
-  img: "/assets/images/secondyear/Avirat.webp",
-  instagram: "/",
-},
+
 {
   name: "Devkriti Sharma",
   section: "second",
@@ -493,16 +484,7 @@ export const profileDetails = [
   linkedin: "https://www.linkedin.com/in/devkriti-sharma-333932291",
   img: "/assets/images/secondyear/Devkriti.webp",
 },
-{
-  name: "Kartik Mittal",
-  section: "second",
-  post: "Executive Members",
-  branch: "Chemical Engineering",
-  location: "Alwar, Rajasthan",
-  instagram: "https://instagram.com/kartik.070811?igshid=OGQ5ZDc2ODk2ZA==",
-  linkedin: "https://www.linkedin.com/in/kartik-mittal-72848a28a",
-  img: "/assets/images/secondyear/KartikMittal.webp",
-},
+
 {
   name: "Kashyap Saksham Kumar",
   section: "second",
@@ -533,28 +515,10 @@ export const profileDetails = [
   linkedin: "https://www.linkedin.com/in/naman-srivastava-035a5a234",
   img: "/assets/images/secondyear/Naman.webp",
 },
-{
-  name: "Niharika Singh",
-  section: "second",
-  post: "Executive Members",
-  branch: "Engineering Physics",
-  location: "Ghaziabad, Uttar Pradesh",
-  instagram: "https://instagram.com/_singhniharika_?igshid=OGQ5ZDc2ODk2ZA==",
-  linkedin: "https://www.linkedin.com/in/niharika-singh-303115285",
-  img: "/assets/images/secondyear/Niharika.webp",
-},
 
 
-{
-  name: "Shambhav Mishra",
-  section: "second",
-  post: "Executive Members",
-  branch: "Mechanical Engineering",
-  location: "Lucknow, Uttar Pradesh",
-  instagram: "https://instagram.com/shambhavvv?igshid=NjIwNzIyMDk2Mg==",
-  linkedin: "https://www.linkedin.com/in/shambhav-mishra-b70312285",
-  img: "/assets/images/secondyear/Shambhav.webp",
-},
+
+
 {
   name: "Siya Sood",
   section: "second",
@@ -575,15 +539,6 @@ export const profileDetails = [
   linkedin: "https://www.linkedin.com/in/sonal-dogra-bb5555291",
   img: "/assets/images/secondyear/Sonal.webp",
 },
-{
-  name: "Vedant Tiwari",
-  section: "second",
-  post: "Executive Members",
-  branch: "Civil Engineering",
-  location: "Bhopal, Madhya Pradesh",
-  instagram: "https://instagram.com/eviloid.fr?igshid=NTc4MTIwNjQ2YQ==",
-  linkedin: "https://www.linkedin.com/in/vedant-tiwari-3104ba262",
-  img: "/assets/images/secondyear/Vedant.webp",
-},
+
 
   ];

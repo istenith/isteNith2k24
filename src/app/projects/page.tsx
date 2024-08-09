@@ -66,8 +66,8 @@ const Projects = () => {
 
   return (
     <>
-     <Navbar/>
-      <div className="lg:text-[167px] md:text-8xl text-5xl mt-7 mx-12 md:mt-16 font-barlowb text-white lg:mx-20 lg:px-2 lg:mt-12">
+<Navbar/>
+      <div className="lg:text-[167px] md:text-8xl text-5xl   font-barlowb text-white lg:pt-16 lg:mx-20 mx-20 pt-4">
         PROJECTS
       </div>
       <div className="border-t-2 border-gray-200 md:mx-20 lg:mx-24 mx-4 lg:mt-0"></div>
@@ -126,6 +126,7 @@ const Projects = () => {
         <div className='lg:h-28 h-0 '></div>
       </div>
       <Footer/>
+
     </>
   );
 };

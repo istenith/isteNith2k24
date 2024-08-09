@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
-
+import Footer from '@/components/footer';
 import Head from 'next/head';
 import { BiSolidContact } from "react-icons/bi";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -133,7 +133,7 @@ return (
                   {item.name}
                 </div>
               </Link>
-              {/* Decorative elements for navigation items */}
+
               <span className="hidden md:flex w-24 h-px bg-white"></span>
               <span className="hidden md:flex w-3 h-3 bg-white rounded-full"></span>
             </motion.li>
@@ -206,21 +206,17 @@ return (
 
 
 
-
-
-
-
-
-      <div className="flex flex-col items-center justify-center min-h-screen  text-white  -mt-1 lg:mt-0">
-      <h1 className=" text-5xl lg:text-[170px] font-barlowmedium mb-12">CONTACT</h1>
-      <p className=" lg:text-[32px] text-2xl px-12 lg:px-32  text-[#FFFFFF]  mb-0 lg:mb-116 text-center font-actor">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-[#171616]  text-white  -mt-1 lg:mt-0">
+      <h1 className=" text-5xl lg:text-[88px] font-barlowmedium mb-12">CONTACT</h1>
+      <p className=" lg:text-[32px] text-2xl px-12 lg:px-32  text-[#FFFFFF]  mb-0 lg:mb-40 text-center font-actor">
         Have a question or need assistance? Our team is always ready to help.
         Feel free to reach out, and we will be delighted to aid you by providing heartfelt support.
       </p>
 
+
     </div>
 
-    <footer className='  lg:-mt-40 -mt-20 text-white z-50'>
+    <footer className='  bg-[#171616] z-50'>
     <div className=" flex flex-col  lg:flex-row w-full justify-between   mt-0 ">
     <div className=" flex lg:flex-row  mx-12 lg:ml-20 items-center">
       <FaMapLocationDot className=" size-20 lg:size-24  " />
@@ -245,8 +241,13 @@ return (
     </div>
 
   </div>
+  <div className='lg:h-40  h-0'>
+
+  </div>
   
   </footer>
+<Footer/>
+
 
  </div> 
 );};

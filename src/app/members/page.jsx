@@ -6,7 +6,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Navbar from '../../components/navbar';
+import Navbar from '@/components/navbar';
 import Footer from '../../components/footer';
 
 const client = new ApolloClient({
@@ -62,7 +62,7 @@ const Team = () => {
 <Navbar/>
     <div className="min-h-screen bg-[#171616]  text-white">
       <div className="bg-[#171616] lg:w-full top-0 z-50">
-        <div className="lg:ml-16  mx-auto lg:px-0 pt-5 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
+        <div className="lg:ml-16  mx-auto lg:px-0 pt-20 text-[50px] md:text-6xl font-actor text-center lg:text-start">ISTE NITH</div>
         <div className="border-t-2 border-white mx-auto -mt-2  lg:my-1 w-10/12 lg:w-11/12"></div>
       </div>
 
@@ -146,6 +146,7 @@ const Team = () => {
 
     </div>
     <Footer/>
+
     </>
   );
 };

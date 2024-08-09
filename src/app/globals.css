@@ -156,6 +156,10 @@ background-color: #171616;
 margin-bottom: 1rem;
 }
 
+.mb-footer{
+  margin-bottom: -88px;
+
+}
 
 /*iste and nith media q*/
 @media (max-width:768px) {

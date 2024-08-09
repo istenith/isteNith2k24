@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "src/app/members/page.jsx",
     "src/app/gallery/page.tsx",
-    "global.d.ts" ,
+    "global.d.ts", "src/components/navbar.jsx" ,
     ],
   "exclude": ["node_modules"]
 }

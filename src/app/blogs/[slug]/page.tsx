@@ -36,20 +36,14 @@ export default function Page({ params } :any){
 
     return (
 <>
-
+<Navbar/>
 <div className="min-h-screen  bg-[#171616]   text-white">
             <div className="flex flex-col lg:flex-row ">
-                <div className="w-full lg:w-1/5 lg:mt-8  lg:-top-10 pt-7 pb-3 z-50 lg:ml-80  text-slate-200 flex flex-row lg:flex-col  justify-center lg:justify-start    lg:bg-transparent ">
-                    <div className="from-neutral-400 text-6xl lg:text-9xl font-barlowb lg:mb-1">B</div>
-                    <div className="from-neutral-400 text-6xl lg:text-9xl font-barlowb lg:mb-1">L</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">O</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">G</div>
-                    <div className="from-neutral-400 -ml-2 text-6xl lg:text-9xl font-barlowb lg:-ml-4 lg:mb-1">S</div>
-                </div>
 
-                <div className="w-full  md:w-3/4 md:ml-28 px-4 lg:w-7/12 mt-2 md:mt-4 lg:mt-4 lg:pl-40 lg:-ml-40 ">
 
-                    <div className="flex flex-col mt-4 lg:mt-16 ">
+                <div className="w-full  md:w-3/4 md:mx-[10%] px-4 lg:px-0 lg:w-8/12 lg:mx-60 mt-2 md:mt-4 lg:mt-4   ">
+
+                    <div className="flex flex-col mt-16 lg:mt-16 ">
                         <div className="border-t-2 border-white"></div>
                         <div className="lg:mt-2 py-2 md:pt-2 px-1 text-2xl md:text-3xl lg:text-3xl font-actor lg:px-2">{props.fontMatter.title}</div>
                         <div className="bg-custom-grayblog-53 rounded-md lg:mt-8 p-2 mt-8 lg:p-6">
@@ -58,10 +52,10 @@ export default function Page({ params } :any){
                             </div>
                            
                             <div className="flex lg:flex-row flex-wrap justify-evenly font-actor  mt-12">
-                                <div className="bg-custom-graytags-60 lg:text-1.5xl mt-4  p-4 rounded-md">{props.fontMatter.tags[0]}</div>
-                                <div className=" bg-custom-graytags-60 lg:text-1.5xl p-4 ml-4 mt-4 rounded-md">{props.fontMatter.tags[1]}</div>
-                                <div className="bg-custom-graytags-60 lg:text-1.5xl p-4 ml-4 mt-4 rounded-md">{props.fontMatter.tags[2]}</div>
-                                <div className="bg-custom-graytags-60 lg:text-1.5xl p-4 ml-4 mt-4 rounded-md">{props.fontMatter.tags[3]}</div>
+                                <div className="bg-custom-graytags-60 lg:text-1.3xl mt-4  p-3 rounded-lg">{props.fontMatter.tags[0]}</div>
+                                <div className=" bg-custom-graytags-60 lg:text-1.3xl p-3 ml-4 mt-4 rounded-lg">{props.fontMatter.tags[1]}</div>
+                                <div className="bg-custom-graytags-60 lg:text-1.3xl p-2 ml-4 mt-4 rounded-lg">{props.fontMatter.tags[2]}</div>
+                                <div className="bg-custom-graytags-60 lg:text-1.3xl p-2 ml-4 mt-4 rounded-lg">{props.fontMatter.tags[3]}</div>
                             </div>
                             <div className='mt-8 lg:text-1.2xl md:text-1.3xl text-1xl font-actor'><MDXRemote source={props.content} ></MDXRemote></div>
                             
@@ -78,6 +72,7 @@ export default function Page({ params } :any){
             </div>
         </div>
         <Footer/>
+
 </>
 
    
