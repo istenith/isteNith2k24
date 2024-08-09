@@ -12,7 +12,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed w-full top-0 left-0 h-16 flex justify-between items-center p-4 lg:bg-[#171500] bg-[#171616] z-50">
+    <nav className="fixed w-full top-0 left-0 h-16 flex justify-between items-center p-4  bg-[#171616] z-50">
 
       <Link href="/" className="flex items-center text-white no-underline hover:text-gray-300">
 <div className="mt-4">
